@@ -10,7 +10,7 @@ A lightning-fast, pure client-side companion guide and documentation single-page
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,vite,js,tailwind,nodejs" alt="Tech Stack Icons" />
+    <img src="https://skillicons.dev/icons?i=react,js,tailwind,nodejs" alt="Tech Stack Icons" />
   </a>
 </p>
 
@@ -23,7 +23,6 @@ A lightning-fast, pure client-side companion guide and documentation single-page
 
 ### Frontend & Core
 - ![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB) **[React 19](https://react.dev/)** — Component-driven UI architecture using modern hooks and concurrent rendering features.
-- ![Vite](https://img.shields.io/badge/Vite_8-646CFF?style=flat-square&logo=vite&logoColor=white) **[Vite 8](https://vite.dev/)** — Fast build tool and HMR (Hot Module Replacement) development server.
 - ![JavaScript](https://img.shields.io/badge/ES_Modules-F7DF1E?style=flat-square&logo=javascript&logoColor=black) **[JavaScript (ES Modules)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)** — Modular, dependency-free business logic and dynamic game formula simulations.
 
 ### Styling & Design System
