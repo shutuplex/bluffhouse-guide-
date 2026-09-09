@@ -8,20 +8,34 @@ A lightning-fast, pure client-side companion guide and documentation single-page
 
 ## Tech Stack
 
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,vite,js,tailwind,nodejs,html,css" alt="Tech Stack Icons" />
+  </a>
+</p>
+
+<p align="left">
+  <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React 19" />
+  <img src="https://img.shields.io/badge/Vite_8-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite 8" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS_v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS v4" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+</p>
+
 ### Frontend & Core
-- **[React 19](https://react.dev/)** — Component-driven UI architecture using modern hooks and concurrent rendering features.
-- **[Vite 8](https://vite.dev/)** — Fast build tool and HMR (Hot Module Replacement) development server.
-- **[JavaScript (ES Modules)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)** — Modular, dependency-free business logic and dynamic game formula simulations.
+- ![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB) **[React 19](https://react.dev/)** — Component-driven UI architecture using modern hooks and concurrent rendering features.
+- ![Vite](https://img.shields.io/badge/Vite_8-646CFF?style=flat-square&logo=vite&logoColor=white) **[Vite 8](https://vite.dev/)** — Fast build tool and HMR (Hot Module Replacement) development server.
+- ![JavaScript](https://img.shields.io/badge/ES_Modules-F7DF1E?style=flat-square&logo=javascript&logoColor=black) **[JavaScript (ES Modules)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)** — Modular, dependency-free business logic and dynamic game formula simulations.
 
 ### Styling & Design System
-- **[Tailwind CSS v4](https://tailwindcss.com/)** (`@tailwindcss/vite`) — Native CSS imports with `@import "tailwindcss"`.
-- **Custom Glassmorphism Engine** — Frosted glass utility classes (`.glass-window`, `.glass-panel`, `.glass-card`, `.glass-badge`, `.glass-btn`) featuring deep backdrop blur (`backdrop-filter: blur(24px)`), translucent gradients, and thin specular borders (`border-white/15`).
-- **Monochromatic High-Contrast Palette** — Charcoal/slate dark gradient canvas with crisp grayish-white typography hierarchy (`text-white`, `text-zinc-200`, `text-zinc-300`).
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) **[Tailwind CSS v4](https://tailwindcss.com/)** (`@tailwindcss/vite`) — Native CSS imports with `@import "tailwindcss"`.
+- ![CSS3](https://img.shields.io/badge/Glassmorphism-1572B6?style=flat-square&logo=css3&logoColor=white) **Custom Glassmorphism Engine** — Frosted glass utility classes (`.glass-window`, `.glass-panel`, `.glass-card`, `.glass-badge`, `.glass-btn`) featuring deep backdrop blur (`backdrop-filter: blur(24px)`), translucent gradients, and thin specular borders (`border-white/15`).
+- ![Design](https://img.shields.io/badge/Theme-Monochrome-18181b?style=flat-square) **Monochromatic High-Contrast Palette** — Charcoal/slate dark gradient canvas with crisp grayish-white typography hierarchy (`text-white`, `text-zinc-200`, `text-zinc-300`).
 
 ### Icons & Utilities
-- **[Lucide React](https://lucide.dev/)** — Clean, lightweight SVG icon set.
-- **[clsx](https://github.com/lukeed/clsx) & [tailwind-merge](https://github.com/dcastil/tailwind-merge)** — Dynamic class merging and collision resolution.
-- **[canvas-confetti](https://www.npmjs.com/package/canvas-confetti)** — Lightweight celebratory particle effects for simulator interactions.
+- ![Lucide](https://img.shields.io/badge/Lucide_React-F56565?style=flat-square&logo=feather&logoColor=white) **[Lucide React](https://lucide.dev/)** — Clean, lightweight SVG icon set.
+- ![NPM](https://img.shields.io/badge/Utilities-clsx_%26_tailwind--merge-CB3837?style=flat-square&logo=npm&logoColor=white) **[clsx](https://github.com/lukeed/clsx) & [tailwind-merge](https://github.com/dcastil/tailwind-merge)** — Dynamic class merging and collision resolution.
+- ![Canvas](https://img.shields.io/badge/Effects-canvas--confetti-4B0082?style=flat-square) **[canvas-confetti](https://www.npmjs.com/package/canvas-confetti)** — Lightweight celebratory particle effects for simulator interactions.
 
 ---
 
