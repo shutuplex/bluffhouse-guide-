@@ -1,6 +1,6 @@
 # bluffhouse — Game Mechanics & Minimalistic Glassmorphic Web UI
 
-<img src="https://files.catbox.moe/z6ewwn.gif" alt="LEXSNIP Logo" width="100%" />
+<img src="https://files.catbox.moe/z6ewwn.gif" alt="Bluffhouse Logo" width="100%" />
 
 > **Guide for game mechanics and example of minimalistic web Ui using React**
 
@@ -12,8 +12,7 @@ A lightning-fast, pure client-side companion guide and documentation single-page
 
 <p align="left">
   <a href="https://skillicons.dev"> <br/> 
-  <img src="https://files.catbox.moe/z6ewwn.gif" alt="LEXSNIP Logo" width="100%" />
-  <br />
+
     <img src="https://skillicons.dev/icons?i=react,js,tailwind,nodejs" alt="Tech Stack Icons" />
   </a>
 </p>
