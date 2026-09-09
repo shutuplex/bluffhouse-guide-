@@ -12,8 +12,7 @@ A lightning-fast, pure client-side companion guide and documentation single-page
 
 <p align="left">
   <a href="https://skillicons.dev"> <br/> 
-
-    <img src="https://skillicons.dev/icons?i=react,js,tailwind,nodejs" alt="Tech Stack Icons" />
+  <img src="https://skillicons.dev/icons?i=react,js,tailwind,nodejs" alt="Tech Stack Icons" />
   </a>
 </p>
 
