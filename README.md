@@ -9,7 +9,9 @@ A lightning-fast, pure client-side companion guide and documentation single-page
 ## Tech Stack
 
 <p align="left">
-  <a href="https://skillicons.dev">
+  <a href="https://skillicons.dev"> <br/> 
+  <img src="https://files.catbox.moe/z6ewwn.gif" alt="LEXSNIP Logo" width="100%" />
+  <br />
     <img src="https://skillicons.dev/icons?i=react,js,tailwind,nodejs" alt="Tech Stack Icons" />
   </a>
 </p>
