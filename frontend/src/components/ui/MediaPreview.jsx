@@ -38,6 +38,7 @@ export default function MediaPreview({
           loop
           muted
           playsInline
+          referrerPolicy="no-referrer"
           onLoadedData={() => setLoaded(true)}
           onError={() => setHasError(true)}
           className={`w-full h-full object-cover transition-opacity duration-300 ${loaded ? 'opacity-100' : 'opacity-0'}`}
@@ -47,6 +48,7 @@ export default function MediaPreview({
           src={src}
           alt={alt}
           loading="lazy"
+          referrerPolicy="no-referrer"
           onLoad={() => setLoaded(true)}
           onError={() => setHasError(true)}
           className={`w-full h-full object-cover transition-all duration-300 ${loaded ? 'opacity-100 group-hover:scale-105' : 'opacity-0'}`}

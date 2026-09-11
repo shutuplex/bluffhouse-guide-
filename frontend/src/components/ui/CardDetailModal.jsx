@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
-import { X, ExternalLink, Shield, Heart, Zap, Gift, Sword, Sparkles, Droplets, Flame, Skull, Film } from 'lucide-react';
+import { useEffect } from 'react';
+import { createPortal } from 'react-dom';
+import { X, ExternalLink, Shield, Heart, Gift, Film } from 'lucide-react';
 import CopyButton from '../CopyButton';
 
 export default function CardDetailModal({ isOpen, onClose, item, type }) {
@@ -21,9 +22,9 @@ export default function CardDetailModal({ isOpen, onClose, item, type }) {
 
   const isVideo = item.isVideo || (typeof item.img_url === 'string' && (item.img_url.endsWith('.mp4') || item.img_url.endsWith('.webm')));
 
-  return (
+  const modalContent = (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6"
+      className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-6"
       style={{ background: 'rgba(0, 0, 0, 0.85)', backdropFilter: 'blur(12px)' }}
       onClick={onClose}
     >
@@ -78,12 +79,14 @@ export default function CardDetailModal({ isOpen, onClose, item, type }) {
                     autoPlay
                     loop
                     playsInline
+                    referrerPolicy="no-referrer"
                     className="w-full h-auto max-h-[440px] object-contain"
                   />
                 ) : (
                   <img
                     src={item.img_url}
                     alt={item.name}
+                    referrerPolicy="no-referrer"
                     className="w-full h-auto max-h-[440px] object-contain"
                   />
                 )}
@@ -387,4 +390,6 @@ export default function CardDetailModal({ isOpen, onClose, item, type }) {
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 }

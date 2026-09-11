@@ -30,10 +30,13 @@ export default function WeaponsDatabasePage() {
         </p>
       </div>
 
+      {/* Weapons Database Showcase (Primary Section) */}
+      <WeaponsShowcase />
+
       {/* Weapon Rarity Tiers */}
-      <section className="space-y-4">
+      <section className="space-y-4 pt-6 border-t border-white/10">
         <h2 className="text-xl font-bold text-white flex items-center gap-2">
-          <span className="text-zinc-400 font-mono text-sm">01.</span> Weapon Rarity Tiers
+          <span className="text-zinc-400 font-mono text-sm">02.</span> Weapon Rarity Tiers
         </h2>
         <div className="glass-card rounded-2xl overflow-hidden border border-white/15">
           <div className="overflow-x-auto">
@@ -113,9 +116,6 @@ export default function WeaponsDatabasePage() {
           ))}
         </div>
       </section>
-
-      {/* Weapons Database Showcase */}
-      <WeaponsShowcase />
 
       {/* Armory & Equipment Quick Reference */}
       <section className="space-y-4">

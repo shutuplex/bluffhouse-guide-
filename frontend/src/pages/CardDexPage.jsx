@@ -46,10 +46,13 @@ export default function CardDexPage() {
         </p>
       </div>
 
+      {/* Anime Characters Showcase (Primary Section) */}
+      <CharactersShowcase />
+
       {/* Gacha Summon System */}
-      <section className="space-y-3 sm:space-y-4">
+      <section className="space-y-3 sm:space-y-4 pt-6 border-t border-white/10">
         <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-          <span className="text-zinc-400 font-mono text-xs sm:text-sm">01.</span> Gacha Summon Rates
+          <span className="text-zinc-400 font-mono text-xs sm:text-sm">02.</span> Gacha Summon Rates
         </h2>
         <Callout variant="note" title="Triple-Card Pulls & Golden Pity">
           Each summon pulls 3 character cards simultaneously. A built-in pity system guarantees Legendary or Mythic drops if no top-tier card has appeared within the pity threshold.
@@ -107,7 +110,7 @@ export default function CardDexPage() {
       {/* Legendary Talismans */}
       <section className="space-y-3 sm:space-y-4">
         <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-          <span className="text-zinc-400 font-mono text-xs sm:text-sm">02.</span> Legendary Talisman Bonuses
+          <span className="text-zinc-400 font-mono text-xs sm:text-sm">03.</span> Legendary Talisman Bonuses
         </h2>
         <Callout variant="tip" title="Equip Cards as Talismans">
           Cards with Legendary or Mythic grade can be equipped into Talisman Pouches (unlocked at Level 1, 25, and 50). They provide passive stats that apply to all combat rolls.
@@ -142,9 +145,6 @@ export default function CardDexPage() {
           </div>
         </div>
       </section>
-
-      {/* Anime Characters Showcase */}
-      <CharactersShowcase />
 
     </div>
   );

@@ -21,10 +21,13 @@ export default function BestiaryPage() {
         </p>
       </div>
 
+      {/* Bestiary Database Showcase (Primary Section) */}
+      <EnemiesShowcase />
+
       {/* Spawn Rates */}
-      <section className="space-y-3 sm:space-y-4">
+      <section className="space-y-3 sm:space-y-4 pt-6 border-t border-white/10">
         <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-          <span className="text-zinc-400 font-mono text-xs sm:text-sm">01.</span> Encounter Spawn Rates — <CommandBadge cmd="/hunt" />
+          <span className="text-zinc-400 font-mono text-xs sm:text-sm">02.</span> Encounter Spawn Rates — <CommandBadge cmd="/hunt" />
         </h2>
         <Callout variant="note" title="Encounter System">
           Trigger encounters with <span className="text-white font-mono font-medium">/hunt</span> or <span className="text-white font-mono font-medium">/explore</span>. Spawns are dynamically determined by weighted tier probabilities.
@@ -95,9 +98,6 @@ export default function BestiaryPage() {
           </div>
         </div>
       </section>
-
-      {/* Bestiary Database Showcase */}
-      <EnemiesShowcase />
 
     </div>
   );
