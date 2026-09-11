@@ -1,14 +1,21 @@
 import rawCharacters from './characters.json';
 
+const isVideoUrl = (url) => {
+  if (!url || typeof url !== 'string') return false;
+  return /\.(mp4|webm|ogg|mov)($|\?|#)/i.test(url.trim());
+};
+
 // Normalize names, anime strings, and video checks
 export const CHARACTERS_DATA = rawCharacters.map(c => {
   const anime = (c.anime || 'Unknown').trim();
   const name = (c.name || 'Unknown').trim();
-  const isVideo = typeof c.img_url === 'string' && (c.img_url.endsWith('.mp4') || c.img_url.endsWith('.webm'));
+  const img_url = typeof c.img_url === 'string' ? c.img_url.trim() : c.img_url;
+  const isVideo = isVideoUrl(img_url);
   return {
     ...c,
     name,
     anime,
+    img_url,
     isVideo
   };
 });

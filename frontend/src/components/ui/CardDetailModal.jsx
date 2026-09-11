@@ -1,9 +1,16 @@
-import { useEffect } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { X, ExternalLink, Shield, Heart, Gift, Film } from 'lucide-react';
+import { X, ExternalLink, Shield, Heart, Gift, Film, Sparkles } from 'lucide-react';
 import CopyButton from '../CopyButton';
 
 export default function CardDetailModal({ isOpen, onClose, item, type }) {
+  const [videoError, setVideoError] = useState(false);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    setVideoError(false);
+  }, [item]);
+
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === 'Escape') onClose();
@@ -20,7 +27,7 @@ export default function CardDetailModal({ isOpen, onClose, item, type }) {
 
   if (!isOpen || !item) return null;
 
-  const isVideo = item.isVideo || (typeof item.img_url === 'string' && (item.img_url.endsWith('.mp4') || item.img_url.endsWith('.webm')));
+  const isVideo = item.isVideo || (typeof item.img_url === 'string' && /\.(mp4|webm|ogg|mov)($|\?|#)/i.test(item.img_url.trim()));
 
   const modalContent = (
     <div
@@ -73,15 +80,48 @@ export default function CardDetailModal({ isOpen, onClose, item, type }) {
             <div className="md:col-span-5 space-y-3">
               <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-black/60 shadow-lg flex items-center justify-center min-h-[260px] max-h-[440px]">
                 {isVideo ? (
-                  <video
-                    src={item.img_url}
-                    controls
-                    autoPlay
-                    loop
-                    playsInline
-                    referrerPolicy="no-referrer"
-                    className="w-full h-auto max-h-[440px] object-contain"
-                  />
+                  videoError ? (
+                    <div className="p-6 text-center space-y-3">
+                      <div className="w-12 h-12 rounded-full bg-purple-500/20 border border-purple-500/40 flex items-center justify-center text-purple-300 mx-auto">
+                        <Film className="w-6 h-6" />
+                      </div>
+                      <div className="text-xs font-mono text-zinc-300 font-medium">
+                        Inline Video Stream Blocked
+                      </div>
+                      <p className="text-[11px] font-mono text-zinc-400 max-w-[220px] mx-auto">
+                        Your browser restricted inline decoding. Click below to view the clip directly.
+                      </p>
+                      <a
+                        href={item.img_url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-mono transition-colors"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5" />
+                        <span>Open Video</span>
+                      </a>
+                    </div>
+                  ) : (
+                    <video
+                      ref={(el) => {
+                        videoRef.current = el;
+                        if (el) {
+                          el.muted = true;
+                          el.defaultMuted = true;
+                          const p = el.play();
+                          if (p && typeof p.catch === 'function') p.catch(() => {});
+                        }
+                      }}
+                      src={item.img_url}
+                      controls
+                      autoPlay
+                      loop
+                      playsInline
+                      preload="auto"
+                      onError={() => setVideoError(true)}
+                      className="w-full h-auto max-h-[440px] object-contain"
+                    />
+                  )
                 ) : (
                   <img
                     src={item.img_url}
