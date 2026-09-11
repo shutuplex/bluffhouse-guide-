@@ -412,14 +412,6 @@ export default function CardDetailModal({ isOpen, onClose, item, type }) {
                       </code>
                       <CopyButton text="/cards" label="Copy /cards" />
                     </div>
-                    {(item.rarity === 'Legendary' || item.rarity === 'Mythic' || item.rarity === 'Summer Edition') && (
-                      <div className="flex items-center gap-2">
-                        <code className="text-xs font-mono text-zinc-200 bg-white/5 px-2.5 py-1.5 rounded-lg border border-white/15">
-                          /pouch_equip 1 {item.id}
-                        </code>
-                        <CopyButton text={`/pouch_equip 1 ${item.id}`} label="Copy Pouch Equip" />
-                      </div>
-                    )}
                   </div>
                 </div>
               )}
