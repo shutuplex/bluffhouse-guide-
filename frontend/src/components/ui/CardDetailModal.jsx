@@ -408,9 +408,9 @@ export default function CardDetailModal({ isOpen, onClose, item, type }) {
                   <div className="pt-2 flex flex-wrap items-center gap-3">
                     <div className="flex items-center gap-2">
                       <code className="text-xs font-mono text-zinc-200 bg-white/5 px-2.5 py-1.5 rounded-lg border border-white/15">
-                        /cards
+                        /collection
                       </code>
-                      <CopyButton text="/cards" label="Copy /cards" />
+                      <CopyButton text="/collection" label="Copy /collection" />
                     </div>
                   </div>
                 </div>
