@@ -1,7 +1,7 @@
-import React from 'react';
-import { Skull, Gift } from 'lucide-react';
+import { Skull } from 'lucide-react';
 import Callout from '../components/ui/Callout';
 import CommandBadge from '../components/ui/CommandBadge';
+import EnemiesShowcase from '../components/EnemiesShowcase';
 
 export default function BestiaryPage() {
   return (
@@ -95,6 +95,9 @@ export default function BestiaryPage() {
           </div>
         </div>
       </section>
+
+      {/* Bestiary Database Showcase */}
+      <EnemiesShowcase />
 
     </div>
   );

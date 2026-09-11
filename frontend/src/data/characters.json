@@ -1,0 +1,3609 @@
+[
+  {
+    "_id": "6a1d25e8b49d240ce3da147a",
+    "id": "01",
+    "img_url": "https://files.catbox.moe/nsrc5i.jpg",
+    "name": "cynthia",
+    "anime": "pokèmon",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a1d2606b49d240ce3da147d",
+    "id": "02",
+    "img_url": "https://i.ibb.co/DPzRyKqK/tmptm9mkj8s.jpg",
+    "name": "Ui Daniel",
+    "anime": "Lookism",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a1d26c6b49d240ce3da1480",
+    "id": "03",
+    "img_url": "https://i.ibb.co/4n6fYv9v/tmpj9domrv3.jpg",
+    "name": "Waguri",
+    "anime": "The fragrant flowers blooms with dignity",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a1d2756b49d240ce3da148a",
+    "id": "04",
+    "img_url": "https://i.ibb.co/xKp6SDBp/tmpdaktgdog.jpg",
+    "name": "James Lee",
+    "anime": "Lookism",
+    "rarity": "Common",
+    "price": 200,
+    "__v": 0
+  },
+  {
+    "_id": "6a1d2790b49d240ce3da148d",
+    "id": "05",
+    "img_url": "https://i.ibb.co/spv6YDVv/tmppnqzb8cs.jpg",
+    "name": "Yuka Okkotsu",
+    "anime": "Jujutsu Kaisen",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a1d281eb49d240ce3da1490",
+    "id": "06",
+    "img_url": "https://i.ibb.co/2YFgndbR/tmplyk-7pwt.jpg",
+    "name": "Waguri",
+    "anime": "The fragrant flowers blooms with dignity",
+    "rarity": "Common",
+    "price": 200,
+    "__v": 0
+  },
+  {
+    "_id": "6a1d3712057d748d84be5cee",
+    "id": "07",
+    "img_url": "https://i.ibb.co/5WYQWsdH/tmp5plx38sj.jpg",
+    "name": "Ayeon",
+    "anime": "The Spike Cross",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a20350563cf7f5ef7b241e5",
+    "id": "08",
+    "img_url": "https://i.ibb.co/fGvbXwD6/tmp3b8w1ft1.jpg",
+    "name": "Tsukishima Kei",
+    "anime": "Haikyuu",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2e983d30478c90cc9dc2c3",
+    "id": "09",
+    "img_url": "https://i.ibb.co/cKqSHnFY/tmp7ee7i8k4.jpg",
+    "name": "Yoruichi",
+    "anime": "Bleach",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2e984a30478c90cc9dc2c6",
+    "id": "10",
+    "img_url": "https://i.ibb.co/27TPwjZP/tmpz7mz42xg.jpg",
+    "name": "Kakashi Hatake",
+    "anime": "Naruto",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a2e989030478c90cc9dc2ca",
+    "id": "11",
+    "img_url": "https://i.ibb.co/ynybjptK/tmpl1y8zefa.jpg",
+    "name": "Sasuke Uchiha",
+    "anime": "Naruto",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a2e98c730478c90cc9dc2cd",
+    "id": "12",
+    "img_url": "https://i.ibb.co/zh4sq1fw/tmphgpmw061.jpg",
+    "name": "Levi Ackerman",
+    "anime": "Attack on Titan",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2e98ec30478c90cc9dc2d0",
+    "id": "13",
+    "img_url": "https://i.ibb.co/vxpLHKLR/tmpfdzixazw.jpg",
+    "name": "Mikasa Ackerman ",
+    "anime": "Attack on Titan",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a2e990730478c90cc9dc2d3",
+    "id": "14",
+    "img_url": "https://i.ibb.co/xS6hqTDf/tmpvyyhso3i.jpg",
+    "name": " Denji",
+    "anime": "Chainsaw Man ",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2e991c30478c90cc9dc2d6",
+    "id": "15",
+    "img_url": "https://i.ibb.co/C52jNpTN/tmp91dlyivb.jpg",
+    "name": "Miwa",
+    "anime": "Jujutsu Kaisen",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a2e995130478c90cc9dc2dc",
+    "id": "16",
+    "img_url": "https://i.ibb.co/ns42ZKqj/tmpzkmcc-v0.jpg",
+    "name": " Makima",
+    "anime": "Chainsaw Man ",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2e9b242901104b01d614e0",
+    "id": "17",
+    "img_url": "https://i.ibb.co/jkw0x6jd/tmpw1dfl29y.jpg",
+    "name": "Itachi ",
+    "anime": "Naruto",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a2e9b6b2901104b01d614e3",
+    "id": "18",
+    "img_url": "https://i.ibb.co/03St8Vv/tmptpdnmful.jpg",
+    "name": "Hiyuki",
+    "anime": "Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2ea2f58848205f6d6a8411",
+    "id": "19",
+    "img_url": "https://i.ibb.co/Y7xqysRk/tmpllc0f1e3.jpg",
+    "name": "Sinu Han",
+    "anime": "Lookism",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2ea33d8848205f6d6a8414",
+    "id": "20",
+    "img_url": "https://i.ibb.co/F4B87wr3/tmpb-kl-ach.jpg",
+    "name": "Eugene",
+    "anime": "Lookism",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a2ea43f8848205f6d6a841b",
+    "id": "21",
+    "img_url": "https://i.ibb.co/hFz18L94/tmpv6-5e9c0.jpg",
+    "name": "Isagi Yoichi",
+    "anime": "Blue Lock",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2ead1c11a1135256d3d874",
+    "id": "22",
+    "img_url": "https://i.ibb.co/mVpd1F6f/tmp1-2wtpor.jpg",
+    "name": "Yinlin",
+    "anime": "Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2ed5e3de65821a55c4c661",
+    "id": "23",
+    "img_url": "https://i.ibb.co/XxvjzJr8/tmpjy52icas.jpg",
+    "name": "Power",
+    "anime": "Chainsaw Man",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2ed5f6de65821a55c4c664",
+    "id": "24",
+    "img_url": "https://i.ibb.co/tMhwggMX/tmp6lihvhpi.jpg",
+    "name": "Power",
+    "anime": "Chainsaw Man",
+    "rarity": "Common",
+    "price": 200,
+    "__v": 0
+  },
+  {
+    "_id": "6a2ed815de65821a55c4c669",
+    "id": "25",
+    "img_url": "https://i.ibb.co/LX2yBkpq/tmp-t2sn5wv.jpg",
+    "name": "Yoru",
+    "anime": "Chainsaw Man",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2ede92de65821a55c4c708",
+    "id": "26",
+    "img_url": "https://i.ibb.co/QBHnSmk/tmptl4c0z.jpg",
+    "name": "Eren",
+    "anime": "Attack On Titan",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2ee88cb47ef36f69822eb9",
+    "id": "27",
+    "img_url": "https://i.ibb.co/G4vjB6Kx/tmpvuwk6rxq.jpg",
+    "name": "Miss Kim",
+    "anime": "Lookism",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a2ee995b47ef36f69822ebe",
+    "id": "28",
+    "img_url": "https://i.ibb.co/tpFLnwSM/tmpgbxgiae1.jpg",
+    "name": "Carlotta",
+    "anime": "Wuthering Waves",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2eeacbb47ef36f69822ec1",
+    "id": "29",
+    "img_url": "https://i.ibb.co/8DgrKSsv/tmp33udk5vj.jpg",
+    "name": "Mikasa Ackerman",
+    "anime": "Attack on Titan",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2eef6c64e1b921f6cad1ea",
+    "id": "30",
+    "img_url": "https://i.ibb.co/Gvq8srLg/tmpvw1gonuo.jpg",
+    "name": "Ichika Nakano",
+    "anime": "Quintessential Quintuplets",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2eefcf64e1b921f6cad1ed",
+    "id": "31",
+    "img_url": "https://i.ibb.co/Z600Lk7x/tmpxz4fpx46.jpg",
+    "name": "Siwoo Baek",
+    "anime": "The Spike Cross",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2ef04964e1b921f6cad1f0",
+    "id": "32",
+    "img_url": "https://i.ibb.co/N6BBpdPn/tmpt2vqak4l.jpg",
+    "name": "Yongsup",
+    "anime": "The Spike Cross",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2ef21c64e1b921f6cad1f3",
+    "id": "33",
+    "img_url": "https://i.ibb.co/R493HJj3/tmpfqfknfbe.jpg.",
+    "name": " Isabel",
+    "anime": "The Spike Cross",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2ef33564e1b921f6cad1f6",
+    "id": "34",
+    "img_url": "https://i.ibb.co/S7NvkQbM/tmppytiodef.jpg",
+    "name": "Sara Seo",
+    "anime": "The Spike Cross",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2ef6a064e1b921f6cad1f9",
+    "id": "35",
+    "img_url": "https://i.ibb.co/NgM7C87J/tmphu-b71mr.jpg",
+    "name": "Miku Nakano",
+    "anime": "Quintessential Quintuplets",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2ef6f364e1b921f6cad1fc",
+    "id": "36",
+    "img_url": "https://i.ibb.co/d4J6cPjR/tmpl0ohxp2u.jpg",
+    "name": "Miku Nakano",
+    "anime": "Quintessential Quintuplets",
+    "rarity": "Common",
+    "price": 200,
+    "__v": 0
+  },
+  {
+    "_id": "6a2ef7f564e1b921f6cad1ff",
+    "id": "37",
+    "img_url": "https://i.ibb.co/67Kf10FT/tmpg590h-l4.jpg",
+    "name": "Itsuki Nakano",
+    "anime": "Quintessential Quintuplets",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2ef9fad618413b8e08e356",
+    "id": "38",
+    "img_url": "https://i.ibb.co/RGYvDzNz/tmpjpduv6gn.jpg",
+    "name": "Yotsuba Nakano ",
+    "anime": "Quintessential Quintuplets",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a2efc0683c8d21b8622b228",
+    "id": "39",
+    "img_url": "https://i.ibb.co/hJsSmn6t/tmpyekbjzdp.jpg",
+    "name": "Nino Nakano",
+    "anime": "Quintessential Quintuplets",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2efc8283c8d21b8622b22d",
+    "id": "40",
+    "img_url": "https://i.ibb.co/mrm3Sjy4/tmp7m33kjj3.jpg",
+    "name": " Nino Nakano",
+    "anime": " Quintessential Quintuplets",
+    "rarity": "Common",
+    "price": 200,
+    "__v": 0
+  },
+  {
+    "_id": "6a2efcc183c8d21b8622b230",
+    "id": "41",
+    "img_url": "https://i.ibb.co/tpJY2DJK/tmpchmic1oo.jpg",
+    "name": "Nino Nakano",
+    "anime": "Quintessential Quintuplets",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2f021e83c8d21b8622b238",
+    "id": "42",
+    "img_url": "https://i.ibb.co/Gv9fQj0y/tmpqus5s-4.jpg",
+    "name": "Reze",
+    "anime": "Chainsaw Man",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a2f03ac83c8d21b8622b23b",
+    "id": "43",
+    "img_url": "https://i.ibb.co/d09N8bNL/tmp56qw762j.jpg",
+    "name": "Dazai Osamu",
+    "anime": "Bungo Stray Dogs",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2f042f83c8d21b8622b23e",
+    "id": "44",
+    "img_url": "https://i.ibb.co/WNhh8d9D/tmp8hysrj-j.jpg",
+    "name": "Nakajima Atsushi",
+    "anime": "Bungo Stray Dogs",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2f04b083c8d21b8622b241",
+    "id": "45",
+    "img_url": "https://i.ibb.co/cjVP7YN/tmpflty105r.jpg",
+    "name": "Nakahara Chuya",
+    "anime": "Bungo Stray Dogs",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2f051583c8d21b8622b244",
+    "id": "46",
+    "img_url": "https://i.ibb.co/xts6xNGz/tmppudpg7zm.jpg",
+    "name": "Sigma",
+    "anime": "Bungo Stray Dogs",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2f05a483c8d21b8622b247",
+    "id": "47",
+    "img_url": "https://i.ibb.co/HL05pR8T/tmpppglej7.jpg",
+    "name": "Rin Itoshi",
+    "anime": " Blue Lock",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2f067583c8d21b8622b24c",
+    "id": "48",
+    "img_url": "https://i.ibb.co/dw7h4gyG/tmpqajnbse2.jpg",
+    "name": "Tenka Izumo",
+    "anime": "Chained Soldier",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2f07af83c8d21b8622b24f",
+    "id": "49",
+    "img_url": "https://i.ibb.co/CKcqppvL/tmp8w-1-n1g.jpg",
+    "name": "Shushu Suruga",
+    "anime": "Chained Soldier",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2f092483c8d21b8622b252",
+    "id": "50",
+    "img_url": "https://i.ibb.co/DDjh6F2k/tmpg8semdfu.jpg",
+    "name": "Ren Yamashiro",
+    "anime": "Chained Soldier",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a2f096a83c8d21b8622b255",
+    "id": "51",
+    "img_url": "https://i.ibb.co/7Jnff7SN/tmpzbpdo629.jpg",
+    "name": "Fubuki Azuma",
+    "anime": "Chained Soldier",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fb8c3772a56b6a289eaa8",
+    "id": "52",
+    "img_url": "https://i.ibb.co/Q3CYM8nC/tmpruls1zxx.jpg",
+    "name": "Konan",
+    "anime": "Naruto",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2fb8c7772a56b6a289eaab",
+    "id": "53",
+    "img_url": "https://i.ibb.co/nNRR21TG/tmp-jz-8p27.jpg",
+    "name": "Shorekeeper",
+    "anime": "Wuthering Waves",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2fba05772a56b6a289eaaf",
+    "id": "54",
+    "img_url": "https://i.ibb.co/QvvwBn6M/tmp4y1xjs5f.jpg",
+    "name": "Shorekeeper",
+    "anime": "Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fbae9772a56b6a289eab2",
+    "id": "55",
+    "img_url": "https://i.ibb.co/xpSywfp/tmpl4sc65h0.jpg",
+    "name": "Zani",
+    "anime": "Wuthering Waves",
+    "rarity": "Common",
+    "price": 200,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fbc2d772a56b6a289eab5",
+    "id": "56",
+    "img_url": "https://i.ibb.co/nyZY5VV/tmpvst89zh4.jpg",
+    "name": "Zani",
+    "anime": "Wuthering Waves",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2fbc5b772a56b6a289eab8",
+    "id": "57",
+    "img_url": "https://i.ibb.co/Y7tsgMT4/tmp42ku1p53.jpg",
+    "name": "Zani",
+    "anime": "Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fbdde772a56b6a289eabe",
+    "id": "58",
+    "img_url": "https://i.ibb.co/DH5zQ7rd/tmp1eew4wwm.jpg",
+    "name": "Shorekeeper",
+    "anime": "Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fbe19772a56b6a289eac1",
+    "id": "59",
+    "img_url": "https://i.ibb.co/C53BT1x8/tmpuv1exnv6.jpg",
+    "name": "Shorekeeper",
+    "anime": "Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fd1a4bd98fce5d1db5f5c",
+    "id": "60",
+    "img_url": "https://i.ibb.co/LhHf60s9/tmp4dvg3gmo.jpg",
+    "name": " Ryo Yamada",
+    "anime": "Bocchi The Rock",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fd1e4bd98fce5d1db5f5f",
+    "id": "61",
+    "img_url": "https://i.ibb.co/G37B1J4p/tmplew0a0ct.jpg",
+    "name": "Ryo Yamada",
+    "anime": "Bocchi The Rock",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fd458bd98fce5d1db5f64",
+    "id": "62",
+    "img_url": "https://i.ibb.co/8L0yDdkP/tmpv-cae-yx.jpg",
+    "name": "Seika Ichiji",
+    "anime": "Bocchi The Rock",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fd74bbd98fce5d1db5f67",
+    "id": "63",
+    "img_url": "https://i.ibb.co/G4Vwj9xG/tmpgty0ydie.jpg",
+    "name": "Hitori Goto",
+    "anime": "Bocchi The Rock",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2fd839bd98fce5d1db5f6a",
+    "id": "64",
+    "img_url": "https://i.ibb.co/PZV1b9Fy/tmpki93fpfr.jpg",
+    "name": "Hitori Goto",
+    "anime": "Bocchi The Rock",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a2fdc55bd98fce5d1db5f6d",
+    "id": "65",
+    "img_url": "https://i.ibb.co/rRJJCyd6/tmpzk1nbkzk.jpg",
+    "name": "Pa San",
+    "anime": "Bocchi The Rock",
+    "rarity": "Common",
+    "price": 200,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fdd03bd98fce5d1db5f70",
+    "id": "66",
+    "img_url": "https://i.ibb.co/mwj4tSz/tmpjmemafmc.jpg",
+    "name": "Pa San",
+    "anime": "Bocchi The Rock",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fdecdbd98fce5d1db5f7a",
+    "id": "67",
+    "img_url": "https://i.ibb.co/Jj99Drcn/tmpht2hrfzi.jpg",
+    "name": "Seika Ichiji",
+    "anime": "Bocchi The Rock",
+    "rarity": "Common",
+    "price": 200,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fdee3bd98fce5d1db5f7d",
+    "id": "68",
+    "img_url": "https://i.ibb.co/VcYQ7JtN/tmpquhn7lwq.jpg",
+    "name": "Seika Ichiji",
+    "anime": "Bocchi The Rock",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fe0e6bd98fce5d1db5f85",
+    "id": "69",
+    "img_url": "https://i.ibb.co/KcKTKTSd/tmpj1s9dud9.jpg",
+    "name": "Kikuri Hiroi",
+    "anime": "Bocchi The Rock",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fe3c7bd98fce5d1db5f88",
+    "id": "70",
+    "img_url": "https://i.ibb.co/hR1NxMRp/tmp01qm7zot.jpg",
+    "name": "Kikuri Hiroi",
+    "anime": "Bocchi The Rock",
+    "rarity": "Common",
+    "price": 200,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fe4d6bd98fce5d1db5f8b",
+    "id": "71",
+    "img_url": "https://i.ibb.co/kgKcY7fs/tmplpvel2vd.jpg",
+    "name": "Nijika Ichiji",
+    "anime": "Bocchi The Rock",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a2fe778bd98fce5d1db5f8e",
+    "id": "72",
+    "img_url": "https://i.ibb.co/TBMgsJpC/tmpcyf6rmt8.jpg",
+    "name": "Ikuyo Kita",
+    "anime": "Bocchi The Rock",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a3045660714f74b0133b582",
+    "id": "73",
+    "img_url": "https://i.ibb.co/R4V0gvmw/tmpwq0hjyll.jpg",
+    "name": "Nagi Seishiro",
+    "anime": "Blue Lock",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a3045980714f74b0133b585",
+    "id": "74",
+    "img_url": "https://i.ibb.co/q3scsVG3/tmp-cspc4of.jpg",
+    "name": "Galbrena",
+    "anime": "Wuthering Waves",
+    "rarity": "Common",
+    "price": 200,
+    "__v": 0
+  },
+  {
+    "_id": "6a3046190714f74b0133b588",
+    "id": "75",
+    "img_url": "https://i.ibb.co/KzNrZQwH/tmphpw-ccc6.jpg",
+    "name": "Pacheon Joe",
+    "anime": "Lookism",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a3046770714f74b0133b58d",
+    "id": "76",
+    "img_url": "https://i.ibb.co/DfFvZHJs/tmpn-jumzq7.jpg",
+    "name": "Cantarella",
+    "anime": "Wuthering Waves",
+    "rarity": "Common",
+    "price": 200,
+    "__v": 0
+  },
+  {
+    "_id": "6a3047180714f74b0133b590",
+    "id": "77",
+    "img_url": "https://i.ibb.co/8LPrzZqZ/tmp3nmw04j9.jpg",
+    "name": "Galbrena",
+    "anime": "Wuthering Waves",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a30489b0714f74b0133b593",
+    "id": "78",
+    "img_url": "https://i.ibb.co/SDPS8Zqy/tmp4g85a4ld.jpg",
+    "name": "Rover",
+    "anime": "Wuthering Waves",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a3049a20714f74b0133b597",
+    "id": "79",
+    "img_url": "https://i.ibb.co/ympqs22d/tmp08v8pmbw.jpg",
+    "name": "Kuchiba Chisa",
+    "anime": "Wuthering Waves",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a304add0714f74b0133b59a",
+    "id": "80",
+    "img_url": "https://i.ibb.co/7xDwsdNF/tmpdp-oh7m5.jpg",
+    "name": "YangYang",
+    "anime": "Wuthering Waves",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a304ca50714f74b0133b59d",
+    "id": "81",
+    "img_url": "https://i.ibb.co/PZyssswY/tmpw5gc9lnb.jpg",
+    "name": "Fern",
+    "anime": "Sosu No Frieren",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a304cde0714f74b0133b5a0",
+    "id": "82",
+    "img_url": "https://i.ibb.co/35jZX8sS/tmpylobhilt.jpg",
+    "name": "Fern",
+    "anime": "Sosu No Frieren",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a304e5f0714f74b0133b5ab",
+    "id": "83",
+    "img_url": "https://i.ibb.co/HTSvyNXn/tmp6bxh-xz6.jpg",
+    "name": "Frieren",
+    "anime": "Sosu No Frieren",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a304ee10714f74b0133b5ae",
+    "id": "84",
+    "img_url": "https://i.ibb.co/WWpHDcrz/tmpvtdsq2h3.jpg",
+    "name": "Ubel",
+    "anime": "Sosu No Frieren",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a304f590714f74b0133b5b1",
+    "id": "85",
+    "img_url": "https://i.ibb.co/4R7sxgF7/tmpfwn19n-3.jpg",
+    "name": "Hiyuki",
+    "anime": " Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a304fbd0714f74b0133b5b4",
+    "id": "86",
+    "img_url": "https://i.ibb.co/wh3Tw5bF/tmpmxu36q61.jpg",
+    "name": "Hiyuki",
+    "anime": "Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a30501e0714f74b0133b5b7",
+    "id": "87",
+    "img_url": "https://i.ibb.co/4wXL6Fzv/tmp7qoj546e.jpg",
+    "name": "Hiyuki ",
+    "anime": "Wuthering Waves",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a3050930714f74b0133b5ba",
+    "id": "88",
+    "img_url": "https://i.ibb.co/994BmDSj/tmptu1l59ka.jpg",
+    "name": "Aiku Oliver",
+    "anime": "Blue Lock",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a3051e10714f74b0133b5bd",
+    "id": "89",
+    "img_url": "https://i.ibb.co/6JpkfJbq/tmp-fm1xrvj.jpg",
+    "name": "Yinlin",
+    "anime": "Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a3052850714f74b0133b5c0",
+    "id": "90",
+    "img_url": "https://i.ibb.co/3YL0DZKP/tmp35t198di.jpg",
+    "name": "Cantarella",
+    "anime": "Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a3053cd0714f74b0133b5c6",
+    "id": "91",
+    "img_url": "https://i.ibb.co/BVjkjB5M/tmptpc1dkpy.jpg",
+    "name": "Cartethyia",
+    "anime": "Wuthering Waves",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a3054960714f74b0133b5c9",
+    "id": "92",
+    "img_url": "https://i.ibb.co/FLzjDHTk/tmpdzlnbcrs.jpg",
+    "name": "Fleurdelys",
+    "anime": "Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a3055bf0714f74b0133b5cc",
+    "id": "93",
+    "img_url": "https://i.ibb.co/398d10qn/tmpkf0br5pr.jpg",
+    "name": "Phoebe",
+    "anime": "Wuthering Waves",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a3056870714f74b0133b5cf",
+    "id": "94",
+    "img_url": "https://i.ibb.co/LzG57yB2/tmpqmb38nir.jpg",
+    "name": "Phrolova",
+    "anime": "Wuthering Waves",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a3057a90714f74b0133b5d2",
+    "id": "95",
+    "img_url": "https://i.ibb.co/svcv6414/tmplveq37u8.jpg",
+    "name": "Lupa",
+    "anime": "Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a3057cb0714f74b0133b5d5",
+    "id": "96",
+    "img_url": "https://i.ibb.co/mncT6zj/tmpkq8si5lr.jpg",
+    "name": "Lupa",
+    "anime": "Wuthering Waves",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a3058ae0714f74b0133b5d8",
+    "id": "97",
+    "img_url": "https://i.ibb.co/m54Jq7FY/tmpel0y35sh.jpg",
+    "name": "Jianxin",
+    "anime": "Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a3059900714f74b0133b5dd",
+    "id": "98",
+    "img_url": "https://i.ibb.co/tpYj4Kmr/tmpfu6fb2a3.jpg",
+    "name": "Baizhi",
+    "anime": "Wuthering Waves",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a305a490714f74b0133b5e0",
+    "id": "99",
+    "img_url": "https://i.ibb.co/qY1g21TW/tmppaks85ee.jpg",
+    "name": "Camellya",
+    "anime": "Wuthering Waves",
+    "rarity": "Medium",
+    "price": 1400,
+    "__v": 0
+  },
+  {
+    "_id": "6a305ab10714f74b0133b5e3",
+    "id": "100",
+    "img_url": "https://i.ibb.co/c720YZC/tmp9qarv5b0.jpg",
+    "name": "Sanhua",
+    "anime": "Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a305b760714f74b0133b5e6",
+    "id": "101",
+    "img_url": "https://i.ibb.co/0RczjLm6/tmp1hvmizrf.jpg",
+    "name": "Lynae",
+    "anime": "Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650,
+    "__v": 0
+  },
+  {
+    "_id": "6a30f7236347f916f70ef3ab",
+    "id": "102",
+    "img_url": "https://i.ibb.co/0R0Ybhzm/tmp0m72nkm4.jpg",
+    "name": "Hiyuki",
+    "anime": "Wuthering Waves",
+    "rarity": "Common",
+    "price": 200,
+    "__v": 0
+  },
+  {
+    "_id": "6a30f7c06347f916f70ef3b3",
+    "id": "103",
+    "img_url": "https://i.ibb.co/MDV7WL2z/tmplf05k8ls.jpg",
+    "name": "Android 18",
+    "anime": " Dragon ball",
+    "rarity": "Common",
+    "price": 200,
+    "__v": 0
+  },
+  {
+    "_id": "6a30f8ae6347f916f70ef3b6",
+    "id": "104",
+    "img_url": "https://i.ibb.co/DgfmB98B/tmp3n43qtiu.jpg",
+    "name": " Yamato",
+    "anime": "One Piece",
+    "rarity": "Common",
+    "price": 200,
+    "__v": 0
+  },
+  {
+    "_id": "6a3103c56347f916f70ef3ba",
+    "id": "105",
+    "img_url": "https://i.ibb.co/rRDXdgc0/tmpsx-z9rx6.jpg",
+    "name": "Madara Uchiha",
+    "anime": "Naruto/Boruto",
+    "rarity": "Legendary",
+    "price": 3500,
+    "__v": 0,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a3a41d71b1291173e8743a0",
+    "id": "106",
+    "img_url": "https://i.ibb.co/Kp6VcF9m/tmpw24skxf2.jpg",
+    "name": "NN",
+    "anime": "The Spike Cross",
+    "rarity": "Medium",
+    "price": 1400
+  },
+  {
+    "_id": "6a3ba2fa394b70c8b449b897",
+    "id": "107",
+    "img_url": "https://i.ibb.co/DPd7wwwt/tmpmsyjgrm1.jpg",
+    "name": "Izumi Miyamura",
+    "anime": "Horimiya",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a3e5ffd9354b7398cfa87c3",
+    "id": "108",
+    "img_url": "https://i.ibb.co/tpZFf5YD/tmp2vs-sf3p.jpg",
+    "name": "Doppo Kunikida",
+    "anime": "Bungo Stray Dogs",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a4e8bce4876a9296e7122f4",
+    "id": "109",
+    "img_url": "https://i.ibb.co/394D1yxr/tmp5zgt2m2z.jpg",
+    "name": "Vivian Hugo",
+    "anime": "Blue Lock",
+    "rarity": "Common",
+    "price": 200
+  },
+  {
+    "_id": "6a4e8e5b0800659366da300a",
+    "id": "110",
+    "img_url": "https://i.ibb.co/VYk7bPcr/tmp-mngvhej.jpg",
+    "name": "smurf cat",
+    "anime": "Overlord",
+    "rarity": "Common",
+    "price": 200
+  },
+  {
+    "_id": "6a4e8f9a0800659366da300b",
+    "id": "111",
+    "img_url": "https://i.ibb.co/VYk7bPcr/tmp-mngvhej.jpg",
+    "name": "smurf cat",
+    "anime": "memes",
+    "rarity": "Medium",
+    "price": 1400
+  },
+  {
+    "_id": "6a4e8fb60800659366da300c",
+    "id": "112",
+    "img_url": "https://i.ibb.co/VYk7bPcr/tmp-mngvhej.jpg",
+    "name": "smurf cat",
+    "anime": "memes",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a4e98dd2b69e294ec2c57c8",
+    "id": "113",
+    "img_url": "https://i.ibb.co/8Lfd83Py/tmpl5kgv5cq.jpg",
+    "name": "Furina",
+    "anime": "Genshin Impact",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a5a9fffc30ad5f3ae80e34d",
+    "id": "114",
+    "img_url": "https://i.ibb.co/Kx3MJsYD/tmpnd19chc9.jpg",
+    "name": "Hanra",
+    "anime": "The Spike Cross",
+    "rarity": "Medium",
+    "price": 1400
+  },
+  {
+    "_id": "6a5c9d5ce7c1b3e6a11a1104",
+    "id": "115",
+    "img_url": "https://i.ibb.co/LX1PWs9W/tmpks8dig1m.jpg",
+    "name": "Esdeath",
+    "anime": "Akame Ga Kill",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a5c9e53e7c1b3e6a11a1109",
+    "id": "116",
+    "img_url": "https://i.ibb.co/R4Cx265k/tmpsn0y3g8b.jpg",
+    "name": "Daniel Park",
+    "anime": "Lookism",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a5ca1a4b3a1afa484744113",
+    "id": "117",
+    "img_url": "https://i.ibb.co/DDdPKwxN/tmpc3hr6tg.jpg",
+    "name": "Phantom Troupe",
+    "anime": "Hunter X Hunter ",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a6f806fa3106ee23ee75110",
+    "id": "118",
+    "img_url": "https://i.ibb.co/t0ZNX5k/tmpgybklhcc.jpg",
+    "name": "Yujae Seon",
+    "anime": "Lookism",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a748736a53f33224a72ab06",
+    "id": "119",
+    "img_url": "https://i.ibb.co/sdYF814j/tmp6dwk8g34.jpg",
+    "name": "Jugram haschwalth",
+    "anime": "Bleach",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a7497daa53f33224a72ab12",
+    "id": "120",
+    "img_url": "https://i.ibb.co/zV2jN8Ym/tmp3b8pffsi.jpg",
+    "name": "Cynthia",
+    "anime": "Pokémon",
+    "rarity": "Summer Edition",
+    "price": 5000
+  },
+  {
+    "_id": "6a74d9f45098247417fff135",
+    "id": "121",
+    "img_url": "https://i.ibb.co/6G5VZB9/tmpnht9ggyo.jpg",
+    "name": "Nico Robin",
+    "anime": "One Piece",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a74db565098247417fff136",
+    "id": "122",
+    "img_url": "https://i.ibb.co/23RHL6Tc/tmpg40dx0ae.jpg",
+    "name": "Shinji Hirako",
+    "anime": "Bleach",
+    "rarity": "Medium",
+    "price": 1400
+  },
+  {
+    "_id": "6a75eb7b5098247417fff14e",
+    "id": "123",
+    "img_url": "https://i.ibb.co/3yjy3XLx/tmpiplqyocg.jpg",
+    "name": "zangetsu",
+    "anime": "Bleach",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a75ed9f5098247417fff14f",
+    "id": "124",
+    "img_url": "https://i.ibb.co/W44K9g35/tmpaiybdun2.jpg",
+    "name": "Daniel Park",
+    "anime": "Lookism",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a75ee995098247417fff150",
+    "id": "125",
+    "img_url": "https://i.ibb.co/FkwkTzXd/tmp6nd2e0q7.jpg",
+    "name": "Shidou Ryusei",
+    "anime": "Blue Lock",
+    "rarity": "Medium",
+    "price": 1400
+  },
+  {
+    "_id": "6a75eee05098247417fff151",
+    "id": "126",
+    "img_url": "https://i.ibb.co/QFcwtTdk/tmpeqgws01h.jpg",
+    "name": "Barou Shoei",
+    "anime": "Blue Lock",
+    "rarity": "Medium",
+    "price": 1400
+  },
+  {
+    "_id": "6a75f1ed2c81acdc4957c657",
+    "id": "127",
+    "img_url": "https://i.ibb.co/LztdQcVz/tmpufsizfoq.jpg",
+    "name": "The Nakano Quintuplets",
+    "anime": "The Quintessential Quintuplets",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a75f3242c81acdc4957c658",
+    "id": "128",
+    "img_url": "https://i.ibb.co/XxYNv6hN/tmpoqehjjdu.jpg",
+    "name": "Rangiku Matsumoto",
+    "anime": "Bleach",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a75f4dd2c81acdc4957c659",
+    "id": "129",
+    "img_url": "https://i.ibb.co/6z6xLvP/tmp41s69529.jpg",
+    "name": "Rukia Kuchiki",
+    "anime": "Bleach",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a7670004931207e65a8be2d",
+    "id": "130",
+    "img_url": "https://i.ibb.co/rKnWtz2s/tmpaqgibmab.jpg",
+    "name": "Micheal Kaiser",
+    "anime": "Blue lock",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a76c1bb4931207e65a8be2e",
+    "id": "131",
+    "img_url": "https://i.ibb.co/TBphB90q/tmp-gynb8f9.jpg",
+    "name": "Orihime Inoue",
+    "anime": "Bleach",
+    "rarity": "Summer Edition",
+    "price": 5000
+  },
+  {
+    "_id": "6a76fa7b4931207e65a8be2f",
+    "id": "132",
+    "img_url": "https://i.ibb.co/XfLLTRrm/tmptpro0733.jpg",
+    "name": "Tatsuki Arisawa",
+    "anime": "Bleach",
+    "rarity": "Medium",
+    "price": 1400
+  },
+  {
+    "_id": "6a76faf84931207e65a8be30",
+    "id": "133",
+    "img_url": "https://i.ibb.co/XZQknCZy/tmp8ums3j04.jpg",
+    "name": "Ikumi Unagiya",
+    "anime": "Bleach",
+    "rarity": "Medium",
+    "price": 1400
+  },
+  {
+    "_id": "6a76fb494931207e65a8be31",
+    "id": "134",
+    "img_url": "https://i.ibb.co/Hpb79Dy0/tmprpbcugsc.jpg",
+    "name": "Retsu Unohana",
+    "anime": "Bleach",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a76fbbe4931207e65a8be32",
+    "id": "135",
+    "img_url": "https://i.ibb.co/Z1WsgNxX/tmp2gakmq8q.jpg",
+    "name": "Riruka Dokugamine",
+    "anime": "Bleach",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a76fc394931207e65a8be33",
+    "id": "136",
+    "img_url": "https://i.ibb.co/5Xt8bS91/tmpd75j7ghe.jpg",
+    "name": "Sabrina",
+    "anime": "Pokémon",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a76fc3c4931207e65a8be34",
+    "id": "137",
+    "img_url": "https://i.ibb.co/ZpGH15zL/tmpvn473ynh.jpg",
+    "name": "Unohana Retsu and Nemu Kurotsuchi",
+    "anime": "Bleach",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a7700094931207e65a8be35",
+    "id": "138",
+    "img_url": "https://i.ibb.co/QzsbCLL/tmp-n9r-8oz.jpg",
+    "name": "Ryo Yamada",
+    "anime": "Bocchi The Rock",
+    "rarity": "Common",
+    "price": 200
+  },
+  {
+    "_id": "6a7700a34931207e65a8be36",
+    "id": "139",
+    "img_url": "https://i.ibb.co/5X8nPrG5/tmp-5vy-w66.jpg",
+    "name": "Nelliel Tu Odelschwanck",
+    "anime": "Bleach",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a7701244931207e65a8be37",
+    "id": "140",
+    "img_url": "https://i.ibb.co/0y40PqX2/tmpk7afxh7i.jpg",
+    "name": "James",
+    "anime": "Pokémon",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a7716e9f8a9d448f4c633c0",
+    "id": "141",
+    "img_url": "https://i.ibb.co/N2rz3xc1/tmpzeykxtgq.jpg",
+    "name": "Mitsuri Kanroji",
+    "anime": "Demon Slayer",
+    "rarity": "Summer Edition",
+    "price": 5000
+  },
+  {
+    "_id": "6a771a5df8a9d448f4c633c1",
+    "id": "142",
+    "img_url": "https://i.ibb.co/YBF6qz7h/tmppyctj5jt.jpg",
+    "name": "Kana Arima",
+    "anime": "Oshi No Ko",
+    "rarity": "Summer Edition",
+    "price": 5000
+  },
+  {
+    "_id": "6a771d57f8a9d448f4c633c2",
+    "id": "143",
+    "img_url": "https://i.ibb.co/whRThdrT/tmpb6vgub3e.jpg",
+    "name": "Lynae",
+    "anime": "Wuthering Waves",
+    "rarity": "Summer Edition",
+    "price": 5000
+  },
+  {
+    "_id": "6a771decf8a9d448f4c633c3",
+    "id": "144",
+    "img_url": "https://i.ibb.co/39hGBcSz/tmpzg5jxw60.jpg",
+    "name": "Hoshimi Miyabi",
+    "anime": "Zenless Zone Zero",
+    "rarity": "Summer Edition",
+    "price": 5000
+  },
+  {
+    "_id": "6a771f60f8a9d448f4c633c4",
+    "id": "145",
+    "img_url": "https://i.ibb.co/B5812L0x/tmpzo6iu36d.jpg",
+    "name": "Ikuyo Kita",
+    "anime": "Bocchi The Rock",
+    "rarity": "Summer Edition",
+    "price": 5000
+  },
+  {
+    "_id": "6a77674ef8a9d448f4c633db",
+    "id": "146",
+    "img_url": "https://i.ibb.co/FbQ6V1fK/tmpwimfuy4q.jpg",
+    "name": "Reze",
+    "anime": "Chainsaw Man",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a776975f8a9d448f4c633dc",
+    "id": "147",
+    "img_url": "https://i.ibb.co/5WWhMyS1/tmpenzmczjh.jpg",
+    "name": "Ryuhyeon",
+    "anime": "The Spike Cross",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a7817e2f8a9d448f4c633e9",
+    "id": "148",
+    "img_url": "https://i.ibb.co/KjfXrgby/tmpfmen6j2f.jpg",
+    "name": "Naruto Uzumaki",
+    "anime": "Naruto: Shippuden",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a786634f8a9d448f4c633f5",
+    "id": "149",
+    "img_url": "https://i.ibb.co/LdH3sVk5/tmpdqu7hk9q.jpg",
+    "name": "Javier Asrahan",
+    "anime": "The Greatest Estate Developer",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a78678cf8a9d448f4c633f6",
+    "id": "150",
+    "img_url": "https://i.ibb.co/MkwNLFCh/tmp56x10619.jpg",
+    "name": "Alicia Termina Magentano",
+    "anime": "The Greatest Estate Developer",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a7e0edf13e1fc5f3ca39c65",
+    "id": "151",
+    "img_url": "https://i.ibb.co/DPrvNDC5/tmp6-xuxlsm.jpg",
+    "name": "lloyd Frontera",
+    "anime": "The Greatest Estate Developer",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a7e891f13e1fc5f3ca39c7f",
+    "id": "152",
+    "img_url": "https://i.ibb.co/6JZdbMzJ/tmpx6b1vsat.jpg",
+    "name": "Shalltear Bloodfallen",
+    "anime": "Overlord",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a7e898e13e1fc5f3ca39c80",
+    "id": "153",
+    "img_url": "https://i.ibb.co/1tfYpgxs/tmpt-2ol9lg.jpg",
+    "name": "Shalltear Bloodfallen",
+    "anime": "Overlord",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a7e89f813e1fc5f3ca39c81",
+    "id": "154",
+    "img_url": "https://i.ibb.co/mF5mkzZZ/tmps3wnce8k.jpg",
+    "name": "Shalltear Bloodfallen",
+    "anime": "Overlord",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a7e8bb613e1fc5f3ca39c82",
+    "id": "155",
+    "img_url": "https://i.ibb.co/zWZdbsmQ/tmp1bxasymx.jpg",
+    "name": "Albedo",
+    "anime": "Overlord",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a7e8c1213e1fc5f3ca39c83",
+    "id": "156",
+    "img_url": "https://i.ibb.co/TqJ56Fpq/tmp0pd3kltk.jpg",
+    "name": "Albedo",
+    "anime": "Overlord",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a7e8c6613e1fc5f3ca39c84",
+    "id": "157",
+    "img_url": "https://i.ibb.co/qYYTf3x9/tmpl11evyjg.jpg",
+    "name": "Albedo",
+    "anime": "Overlord",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a7e8d0813e1fc5f3ca39c85",
+    "id": "158",
+    "img_url": "https://i.ibb.co/PZd2mMbJ/tmpiw56an-e.jpg",
+    "name": "Albedo",
+    "anime": "Overlord",
+    "rarity": "Common",
+    "price": 200
+  },
+  {
+    "_id": "6a7e8d5e13e1fc5f3ca39c86",
+    "id": "159",
+    "img_url": "https://i.ibb.co/pBrRZ0sG/tmp4bkhfwio.jpg",
+    "name": "Albedo",
+    "anime": "Overlord",
+    "rarity": "Common",
+    "price": 200
+  },
+  {
+    "_id": "6a7e8db413e1fc5f3ca39c87",
+    "id": "160",
+    "img_url": "https://i.ibb.co/N2fw1vyp/tmpm30n55mx.jpg",
+    "name": "Albedo",
+    "anime": "Overlord",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a7e8e0c13e1fc5f3ca39c88",
+    "id": "161",
+    "img_url": "https://i.ibb.co/tp8rknGq/tmplji80mtm.jpg",
+    "name": "Shorekeeper",
+    "anime": " Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a7e8e3613e1fc5f3ca39c89",
+    "id": "162",
+    "img_url": "https://i.ibb.co/PssgCz1G/tmpc3b3kb-g.jpg",
+    "name": "Shalltear Bloodfallen",
+    "anime": "Overlord",
+    "rarity": "Common",
+    "price": 200
+  },
+  {
+    "_id": "6a7e8e7613e1fc5f3ca39c8a",
+    "id": "163",
+    "img_url": "https://i.ibb.co/9mhFpDJ2/tmpv3kbignm.jpg",
+    "name": "Rurina",
+    "anime": "Pokémon",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a7fed1313e1fc5f3ca39c9d",
+    "id": "164",
+    "img_url": "https://i.ibb.co/jPW1d08S/tmp04l2stc3.jpg",
+    "name": "Boa Hancock",
+    "anime": "One Piece",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a803f028e3ce67dba5d1f83",
+    "id": "165",
+    "img_url": "https://files.catbox.moe/8mi3dg.mp4",
+    "name": "Daniel Park",
+    "anime": "Lookism",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a80402d8e3ce67dba5d1f84",
+    "id": "166",
+    "img_url": "https://i.ibb.co/GvVXqnyp/tmpo95bendb.jpg",
+    "name": "Goo Kim & Gun Park",
+    "anime": "Lookism",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a81e2b18e3ce67dba5d1f9e",
+    "id": "167",
+    "img_url": "https://files.catbox.moe/8xmeai.jpg",
+    "name": "Boa Hancock",
+    "anime": "One Piece",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a83396c8e3ce67dba5d1fbc",
+    "id": "168",
+    "img_url": "https://i.ibb.co/LwcyKnH/tmpe89wlhs1.jpg",
+    "name": "Yuzuriha",
+    "anime": " Hell's Paradise",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8339ee8e3ce67dba5d1fbd",
+    "id": "169",
+    "img_url": "https://i.ibb.co/sdvL4f1F/tmpauae38j4.jpg",
+    "name": "Vanitas",
+    "anime": "The Case Study Of Vanitas",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a833b118e3ce67dba5d1fbe",
+    "id": "170",
+    "img_url": "https://i.ibb.co/VYVQMJ2p/tmpffsb2gqa.jpg",
+    "name": "Dominique",
+    "anime": "The Case Study Of Vanitas",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a833bad8e3ce67dba5d1fbf",
+    "id": "171",
+    "img_url": "https://i.ibb.co/MyvnC4r3/tmpz85sudl0.jpg",
+    "name": "Jeanne",
+    "anime": "The Case Study of Vanitas",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a833ca28e3ce67dba5d1fc0",
+    "id": "172",
+    "img_url": "https://i.ibb.co/3mFPpTwr/tmpoj1vq7x0.jpg",
+    "name": "Noe",
+    "anime": "The Case Study Of Vanitas",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a833cd58e3ce67dba5d1fc1",
+    "id": "173",
+    "img_url": "https://i.ibb.co/PvZVBF8P/tmpe9tqupnm.jpg",
+    "name": "Noe & Dominique",
+    "anime": "The Case Study Of Vanitas",
+    "rarity": "Summer Edition",
+    "price": 5000
+  },
+  {
+    "_id": "6a833fcb8e3ce67dba5d1fc3",
+    "id": "174",
+    "img_url": "https://i.ibb.co/v6sCfV1c/tmpe5luw9e3.jpg",
+    "name": "Amo Empool",
+    "anime": "Gachiakuta",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8340d78e3ce67dba5d1fc4",
+    "id": "175",
+    "img_url": "https://i.ibb.co/XZSGVqyG/tmpb6amge3c.jpg",
+    "name": "Zanka Nijiku",
+    "anime": "Gachiakuta",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a83422a8e3ce67dba5d1fc5",
+    "id": "176",
+    "img_url": "https://i.ibb.co/qF3prtnK/tmp3p2bj6ys.jpg",
+    "name": " Vanitas & Jeanne",
+    "anime": "The Case Study Of Vanitas",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8344178e3ce67dba5d1fc6",
+    "id": "177",
+    "img_url": "https://i.ibb.co/0pQpr549/tmpy5tc2m-0.jpg",
+    "name": " Revenant",
+    "anime": "Elden Ring",
+    "rarity": "Common",
+    "price": 200
+  },
+  {
+    "_id": "6a8344388e3ce67dba5d1fc7",
+    "id": "178",
+    "img_url": "https://i.ibb.co/zWST9d6X/tmp5v1j29gi.jpg",
+    "name": "Revenant",
+    "anime": "Elden Ring",
+    "rarity": "Medium",
+    "price": 1400
+  },
+  {
+    "_id": "6a8344b18e3ce67dba5d1fc8",
+    "id": "179",
+    "img_url": "https://i.ibb.co/JTjddR9/tmps4f59skk.jpg",
+    "name": "Rellana",
+    "anime": "Elden Ring",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8345188e3ce67dba5d1fc9",
+    "id": "180",
+    "img_url": "https://i.ibb.co/DP6FR3Lc/tmp9ac5mjy3.jpg",
+    "name": "Malenia",
+    "anime": "Elden Ring",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8345978e3ce67dba5d1fca",
+    "id": "181",
+    "img_url": "https://i.ibb.co/wFrYkYp1/tmp2767cwtw.jpg",
+    "name": "Melina",
+    "anime": "Elden Ring",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8346648e3ce67dba5d1fcb",
+    "id": "182",
+    "img_url": "https://i.ibb.co/BVcSznSY/tmpi18-lwpr.jpg",
+    "name": "Maliketh The Black Blade",
+    "anime": "Elden Ring",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8347068e3ce67dba5d1fcc",
+    "id": "183",
+    "img_url": "https://i.ibb.co/mnQqv56/tmphfex1qoi.jpg",
+    "name": "Marika",
+    "anime": "Elden Ring",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8347898e3ce67dba5d1fcd",
+    "id": "184",
+    "img_url": "https://i.ibb.co/mCZ0H4WW/tmpu0tmha2s.jpg",
+    "name": "Ranni",
+    "anime": "Elden Ring",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8347b88e3ce67dba5d1fce",
+    "id": "185",
+    "img_url": "https://i.ibb.co/prWHSNpJ/tmpxu7krh09.jpg",
+    "name": "Ranni",
+    "anime": "Elden Ring",
+    "rarity": "Common",
+    "price": 200
+  },
+  {
+    "_id": "6a83726c0b74502c2e1d6f5e",
+    "id": "186",
+    "img_url": "https://files.catbox.moe/dfnj8n.mp4",
+    "name": "Asuka Souryuu Langley",
+    "anime": "Neon Genesis Evangelion",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a8372e20b74502c2e1d6f5f",
+    "id": "187",
+    "img_url": "https://i.ibb.co/PdLmFmx/tmpj58fke4g.jpg",
+    "name": "Asuka Souryuu Langley",
+    "anime": "Neon Genesis Evangelion",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8373360b74502c2e1d6f60",
+    "id": "188",
+    "img_url": "https://files.catbox.moe/skkmf1.mp4",
+    "name": "James Lee & Kitae Kim",
+    "anime": "Lookism",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a837a070b74502c2e1d6f61",
+    "id": "189",
+    "img_url": "https://files.catbox.moe/bvvgf9.mp4",
+    "name": "Bunny Iglesias",
+    "anime": "Blue Lock",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a850c650b74502c2e1d6f74",
+    "id": "190",
+    "img_url": "https://i.ibb.co/hx30dXpd/tmp00zjow54.jpg",
+    "name": "Ragna",
+    "anime": "Ragna Crimson",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a850d110b74502c2e1d6f75",
+    "id": "191",
+    "img_url": "https://i.ibb.co/R4QhzvZ5/tmppfu5palr.jpg",
+    "name": "Crimson",
+    "anime": "Ragna Crimson",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a850e780b74502c2e1d6f76",
+    "id": "192",
+    "img_url": "https://i.ibb.co/93vR1Yhy/tmp34xz4-xu.jpg",
+    "name": "Starlia Lese",
+    "anime": "Ragna Crimson",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a850eb60b74502c2e1d6f77",
+    "id": "193",
+    "img_url": "https://i.ibb.co/nNjsvLGs/tmpevok15yu.jpg",
+    "name": "Starlia Lese & Ragna",
+    "anime": "Ragna Crimson",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a85b0260b74502c2e1d6f85",
+    "id": "194",
+    "img_url": "https://i.ibb.co/mCZYHvM2/tmpllhmln10.jpg",
+    "name": "Karazu",
+    "anime": "Blue Lock",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a85e0680b74502c2e1d6f93",
+    "id": "195",
+    "img_url": "https://i.ibb.co/mCMfQdpM/tmpkokhv2iq.jpg",
+    "name": "Ranpo Edogawa",
+    "anime": "Bungo Stray Dogs",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a86fa100b74502c2e1d6fa0",
+    "id": "196",
+    "img_url": "https://i.ibb.co/ZpHzb5Jk/tmppkidbmmx.jpg",
+    "name": "Nami",
+    "anime": "One Piece",
+    "rarity": "Common",
+    "price": 200
+  },
+  {
+    "_id": "6a86fa660b74502c2e1d6fa1",
+    "id": "197",
+    "img_url": "https://i.ibb.co/gFHmmwFc/tmp8t2inxgg.jpg",
+    "name": "Changli",
+    "anime": "Wuthering Waves",
+    "rarity": "Common",
+    "price": 200
+  },
+  {
+    "_id": "6a86fb1e0b74502c2e1d6fa2",
+    "id": "198",
+    "img_url": "https://i.ibb.co/wNPgYVVs/tmp6d4bjf19.jpg",
+    "name": "Lucilla",
+    "anime": "Wuthering Waves",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a86fb5d0b74502c2e1d6fa3",
+    "id": "199",
+    "img_url": "https://i.ibb.co/DfkkV1Vj/tmp1nib1iyi.jpg",
+    "name": "Lucilla",
+    "anime": "Wuthering Waves",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a86fb990b74502c2e1d6fa4",
+    "id": "200",
+    "img_url": "https://i.ibb.co/rfp1QNxZ/tmp5zq4ys-q.jpg",
+    "name": "Yinlin",
+    "anime": "Wuthering Waves",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a87015d0b74502c2e1d6fa8",
+    "id": "201",
+    "img_url": "https://i.ibb.co/LDc07MPx/tmp0cenwmv7.jpg",
+    "name": "Shinji Hirako",
+    "anime": "Bleach",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8747570b74502c2e1d6fb1",
+    "id": "202",
+    "img_url": "https://i.ibb.co/N6k4Vv59/tmpte4m12rq.jpg",
+    "name": "Kashimo",
+    "anime": "Jujutsu Kaisen",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8747b70b74502c2e1d6fb2",
+    "id": "203",
+    "img_url": "https://files.catbox.moe/u1a0cd.jpg",
+    "name": "Gojo Satoru",
+    "anime": "Jujutsu Kaisen",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a883fbfa9c2d5f0a3b3f1d5",
+    "id": "204",
+    "img_url": "https://files.catbox.moe/g3cj88.jpg",
+    "name": "Takao Uro",
+    "anime": "Jujutsu Kaisen",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8843f1a9c2d5f0a3b3f1d7",
+    "id": "205",
+    "img_url": "https://files.catbox.moe/wswvwv.mp4",
+    "name": "Denia",
+    "anime": "Wuthering Waves",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a8844d5a9c2d5f0a3b3f1d8",
+    "id": "206",
+    "img_url": "https://files.catbox.moe/1a5v7p.jpg",
+    "name": "Minato Uzumaki",
+    "anime": "Naruto/Boruto",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8845b7a9c2d5f0a3b3f1d9",
+    "id": "207",
+    "img_url": "https://files.catbox.moe/vszwo5.mp4",
+    "name": "Scar",
+    "anime": "Wuthering Waves",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a8847b4a9c2d5f0a3b3f1da",
+    "id": "208",
+    "img_url": "https://files.catbox.moe/wstffv.jpg",
+    "name": "Byakuya Kuchiki",
+    "anime": "Bleach",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a88485aa9c2d5f0a3b3f1db",
+    "id": "209",
+    "img_url": "https://files.catbox.moe/lek6m5.jpg",
+    "name": "Retsu Unohana",
+    "anime": "Bleach",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8848a0a9c2d5f0a3b3f1dc",
+    "id": "210",
+    "img_url": "https://files.catbox.moe/jqn0o9.jpeg",
+    "name": "Gin Ichimaru",
+    "anime": "Bleach",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a884a65a9c2d5f0a3b3f1dd",
+    "id": "211",
+    "img_url": "https://files.catbox.moe/yalnwd.jpg",
+    "name": "Ino Yamanaka",
+    "anime": "Naruto Shippuden",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a884af3a9c2d5f0a3b3f1de",
+    "id": "212",
+    "img_url": "https://files.catbox.moe/l0ep4t.jpg",
+    "name": "Hinata Hyuga",
+    "anime": "Naruto Shippuden",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a884b88a9c2d5f0a3b3f1df",
+    "id": "213",
+    "img_url": "https://files.catbox.moe/mu05bx.jpg",
+    "name": "Ino Yamanaka",
+    "anime": "Naruto Shippuden",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a884e5fc677728512d55f19",
+    "id": "214",
+    "img_url": "https://files.catbox.moe/7wvjpb.jpg",
+    "name": "Zaraki Kenpachi & Unohana Retsu",
+    "anime": "Bleach",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a884edec677728512d55f1a",
+    "id": "215",
+    "img_url": "https://files.catbox.moe/yfplir.mp4",
+    "name": "Arlecchino",
+    "anime": "Wuthering Waves",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a88503fc677728512d55f1b",
+    "id": "216",
+    "img_url": "https://files.catbox.moe/mk9djx.mp4",
+    "name": "Fleurdelys (Cartethyia)",
+    "anime": "Wuthering Waves",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a885634c677728512d55f1c",
+    "id": "217",
+    "img_url": "https://files.catbox.moe/ydlv4n.jpg",
+    "name": "Monkey D. Luffy",
+    "anime": "One Piece",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a88567dc677728512d55f1d",
+    "id": "218",
+    "img_url": "https://files.catbox.moe/vjhy7t.jpg",
+    "name": "Figarland Shanks",
+    "anime": "One Piece",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8856cdc677728512d55f1e",
+    "id": "219",
+    "img_url": "https://files.catbox.moe/pk2sd0.jpg",
+    "name": "Vinsmoke Sanji",
+    "anime": "One Piece",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a885704c677728512d55f1f",
+    "id": "220",
+    "img_url": "https://files.catbox.moe/9tbogk.jpg",
+    "name": "Jinbe",
+    "anime": "One Piece",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a88575ac677728512d55f20",
+    "id": "221",
+    "img_url": "https://files.catbox.moe/1t7lnk.jpg",
+    "name": "Tony Chopper",
+    "anime": "One Piece",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a885848c677728512d55f21",
+    "id": "222",
+    "img_url": "https://files.catbox.moe/6sjn6p.jpg",
+    "name": "Donquixote Doflamingo",
+    "anime": "One Piece",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a885893c677728512d55f22",
+    "id": "223",
+    "img_url": "https://files.catbox.moe/p0p5wb.jpg",
+    "name": "Carrot and Nami",
+    "anime": "One Piece",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a885b81c677728512d55f24",
+    "id": "224",
+    "img_url": "https://i.ibb.co/YFP0S8B8/tmphiu3ffo5.jpg",
+    "name": "Mash",
+    "anime": "Mashle",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a885f2cc677728512d55f25",
+    "id": "225",
+    "img_url": "https://i.ibb.co/chJ7CvVL/tmp7lj2ic68.jpg",
+    "name": "Kukaku Shiba",
+    "anime": "Bleach",
+    "rarity": "Medium",
+    "price": 1400
+  },
+  {
+    "_id": "6a885fdbc677728512d55f27",
+    "id": "226",
+    "img_url": "https://i.ibb.co/MkmqYvy9/tmpq2c0gg7x.jpg",
+    "name": "Orter Madl",
+    "anime": "Mashle",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a887a58c677728512d55f34",
+    "id": "227",
+    "img_url": "https://i.ibb.co/C322yBY4/tmp5jaqocbo.jpg",
+    "name": "Shenhe",
+    "anime": "Genshin Impact",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a887a6bc677728512d55f35",
+    "id": "228",
+    "img_url": "https://files.catbox.moe/mx9k2p.jpg",
+    "name": "Shenhe",
+    "anime": "Genshin Impact",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a887c8dc677728512d55f36",
+    "id": "229",
+    "img_url": "https://i.ibb.co/7xDc7Pgm/tmp-biwirvt.jpg",
+    "name": "Cyrene",
+    "anime": "Honkai Star Rail",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a887d7cc677728512d55f37",
+    "id": "230",
+    "img_url": "https://i.ibb.co/jPMgnGcY/tmpd8ietcf7.jpg",
+    "name": "Aria",
+    "anime": "Zenless Zone Zero",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a898b1da8ed03f8a40eb191",
+    "id": "231",
+    "img_url": "https://i.ibb.co/cc7pST1k/tmpke8e57lq.jpg",
+    "name": "Lucas",
+    "anime": "The Spike Cross",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a898ccaa8ed03f8a40eb192",
+    "id": "232",
+    "img_url": "https://i.ibb.co/xSm43bR0/tmp6gzvyjgn.jpg",
+    "name": "Maki Zenin",
+    "anime": "Jujutsu Kaisen",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a89958ca8ed03f8a40eb196",
+    "id": "233",
+    "img_url": "https://i.ibb.co/fdT1my90/tmprw0lox71.jpg",
+    "name": "Terieri Anri",
+    "anime": "Blue Lock",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a899631a8ed03f8a40eb197",
+    "id": "234",
+    "img_url": "https://i.ibb.co/PZ3VhZyn/tmpxql3w0h0.jpg",
+    "name": "Yuta Okkotsu",
+    "anime": "Jujutsu Kaisen",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a89988aa8ed03f8a40eb198",
+    "id": "235",
+    "img_url": "https://i.ibb.co/8g1kPdtK/tmp4g78gnmd.jpg",
+    "name": "Jenny",
+    "anime": "The Spike Cross",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8998c2a8ed03f8a40eb19a",
+    "id": "236",
+    "img_url": "https://i.ibb.co/93vBCbXd/tmpmbyrecfc.jpg",
+    "name": "Hari & Viola",
+    "anime": "The Spike Cross",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a89d61aa8ed03f8a40eb1b1",
+    "id": "237",
+    "img_url": "https://i.ibb.co/rGwyKMk9/tmp8j928afs.jpg",
+    "name": "Aizen",
+    "anime": "Bleach",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8c5bba86d197502c60c83f",
+    "id": "238",
+    "img_url": "https://i.ibb.co/8DbSghwp/tmpki-lswf5.jpg",
+    "name": "Naru Jurinna",
+    "anime": "Bleach",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8c5c1f86d197502c60c840",
+    "id": "239",
+    "img_url": "https://i.ibb.co/DDcR3cxV/tmpcc35ad1r.jpg",
+    "name": "Sukuna",
+    "anime": "Jujutsu Kaisen",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8c5e0086d197502c60c841",
+    "id": "240",
+    "img_url": "https://i.ibb.co/Rpj3jjZT/tmp8z65k92r.jpg",
+    "name": "Yuji Itadori",
+    "anime": "Jujutsu Kaisen",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8c5edd86d197502c60c842",
+    "id": "241",
+    "img_url": "https://i.ibb.co/99rPjdVt/tmp8gydacdz.jpg",
+    "name": "Seiko ayase",
+    "anime": "Dandadan",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8c5f3886d197502c60c843",
+    "id": "242",
+    "img_url": "https://i.ibb.co/7x1Rv1zd/tmpum8vyj-5.jpg",
+    "name": "Obito Uchiha",
+    "anime": "Naruto Shippuden",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8c601786d197502c60c844",
+    "id": "243",
+    "img_url": "https://i.ibb.co/kVrWZ0gF/tmp9locoiu9.jpg",
+    "name": "Kisame Hoshigake",
+    "anime": "Naruto Shippuden",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8d918886d197502c60c85e",
+    "id": "244",
+    "img_url": "https://i.ibb.co/Psjdz9zV/tmp3rir9z2s.jpg",
+    "name": "Osaragi Kobachi ",
+    "anime": " Shakamoto Days",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8dc31486d197502c60c861",
+    "id": "245",
+    "img_url": "https://i.ibb.co/JFd4m1tt/tmp81-ln2c.jpg",
+    "name": "Reze",
+    "anime": "Chainsaw Man",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8edc8370e1d9e24ebaedc8",
+    "id": "246",
+    "img_url": "https://i.ibb.co/v6sVfyvg/tmpd-7wa9je.jpg",
+    "name": "Yuki Tsukumo",
+    "anime": "Jujutsu Kaisen",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8eddd170e1d9e24ebaedc9",
+    "id": "247",
+    "img_url": "https://i.ibb.co/pjhp6sS2/tmpokpaz93h.jpg",
+    "name": "Marin Kitagawa",
+    "anime": "My Dress Up Darling",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8ede6370e1d9e24ebaedca",
+    "id": "248",
+    "img_url": "https://i.ibb.co/h1JL88C0/tmp6r95rfvk.jpg",
+    "name": "Marin Kitagawa",
+    "anime": "My Dress Up Darling",
+    "rarity": "Summer Edition",
+    "price": 5000
+  },
+  {
+    "_id": "6a8ede8970e1d9e24ebaedcb",
+    "id": "249",
+    "img_url": "https://i.ibb.co/RThHN96r/tmp585y9vps.jpg",
+    "name": "Marin Kitagawa",
+    "anime": "My Dress Up Darling",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8edf7270e1d9e24ebaedcc",
+    "id": "250",
+    "img_url": "https://i.ibb.co/fY7jnKTq/tmp7-5cf292.jpg",
+    "name": "Marin Kitagawa",
+    "anime": "My Dress Up Darling",
+    "rarity": "Summer Edition",
+    "price": 5000
+  },
+  {
+    "_id": "6a8edf9e70e1d9e24ebaedcd",
+    "id": "251",
+    "img_url": "https://i.ibb.co/cS3jKh2R/tmppf3be0rk.jpg",
+    "name": "Gojo Wakana",
+    "anime": "My Dress Up Darling",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8ee0d470e1d9e24ebaedce",
+    "id": "252",
+    "img_url": "https://i.ibb.co/YTJFP7VH/tmpo60de7vb.jpg",
+    "name": "Shinju Inui",
+    "anime": "My Dress Up Darling",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8ee11b70e1d9e24ebaedcf",
+    "id": "253",
+    "img_url": "https://i.ibb.co/kgsM1w5k/tmpq6sjptpq.jpg",
+    "name": "Shinju Inui",
+    "anime": "My Dress Up Darling",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8ee69170e1d9e24ebaedd0",
+    "id": "254",
+    "img_url": "https://i.ibb.co/ZzDX76nn/tmpufy1v6od.jpg",
+    "name": "Himeno",
+    "anime": "Chainsaw Man",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8ee73d70e1d9e24ebaedd1",
+    "id": "255",
+    "img_url": "https://i.ibb.co/cSsq15nV/tmpk855ia34.jpg",
+    "name": "Himeno",
+    "anime": "Chainsaw Man",
+    "rarity": "Common",
+    "price": 200
+  },
+  {
+    "_id": "6a8ef8ed70e1d9e24ebaeddb",
+    "id": "256",
+    "img_url": "https://i.ibb.co/ycxYcQZ4/tmpifihdekn.jpg",
+    "name": "Scopper Gaban",
+    "anime": "One Piece",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8efbaa70e1d9e24ebaedde",
+    "id": "257",
+    "img_url": "https://i.ibb.co/4RGG8SGV/tmpc17l9p-k.jpg",
+    "name": "Team Rocket",
+    "anime": "Pokémon",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8efbcb70e1d9e24ebaeddf",
+    "id": "258",
+    "img_url": "https://i.ibb.co/b5byHVXQ/tmppyet7twv.jpg",
+    "name": "Koby",
+    "anime": "One piece",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8f03e170e1d9e24ebaede3",
+    "id": "259",
+    "img_url": "https://i.ibb.co/TdXvb4r/tmpxwpu76ej.jpg",
+    "name": "Roronoa Zoro",
+    "anime": "One Piece",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8f047370e1d9e24ebaede4",
+    "id": "260",
+    "img_url": "https://i.ibb.co/x8snpcxZ/tmp06n73p8i.jpg",
+    "name": "Ichika Nakano",
+    "anime": "Quintessential Quintuplets",
+    "rarity": "Summer Edition",
+    "price": 5000
+  },
+  {
+    "_id": "6a8f900670e1d9e24ebaedf0",
+    "id": "261",
+    "img_url": "https://i.ibb.co/XZcH670S/tmp-e3j79n1.jpg",
+    "name": "Lady",
+    "anime": "Devil May Cry Series",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8f916570e1d9e24ebaedf2",
+    "id": "262",
+    "img_url": "https://i.ibb.co/1fFWnpZy/tmpmoz43hzw.jpg",
+    "name": "Dante",
+    "anime": "Devil May Cry Series",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8f918870e1d9e24ebaedf3",
+    "id": "263",
+    "img_url": "https://i.ibb.co/FZch3K1/tmpu59mcbly.jpg",
+    "name": "Dante",
+    "anime": "Devil May Cry Series",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8f92a470e1d9e24ebaedf4",
+    "id": "264",
+    "img_url": "https://i.ibb.co/mVTTKJQ1/tmpj-14-43f.jpg",
+    "name": "Vergil",
+    "anime": "Devil May Cry Series",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8f92c470e1d9e24ebaedf5",
+    "id": "265",
+    "img_url": "https://i.ibb.co/x8hj2GVX/tmpzuv-a07a.jpg",
+    "name": "Vergil",
+    "anime": "Devil May Cry Series",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8f93f170e1d9e24ebaedf6",
+    "id": "266",
+    "img_url": "https://i.ibb.co/Y7gb2WYX/tmp35gqglpp.jpg",
+    "name": " Lady and Trish and Niko",
+    "anime": "Devil May Cry Series",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8f945a70e1d9e24ebaedf7",
+    "id": "267",
+    "img_url": "https://i.ibb.co/wh5wwFFv/tmpivyt8yv8.jpg",
+    "name": "Trish",
+    "anime": "Devil May Cry Series",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8f954a70e1d9e24ebaedf8",
+    "id": "268",
+    "img_url": "https://i.ibb.co/hF6y7RhD/tmpkhislq28.jpg",
+    "name": "Nero",
+    "anime": "Devil May Cry Series",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8f9c4870e1d9e24ebaedfc",
+    "id": "269",
+    "img_url": "https://i.ibb.co/vCzwPRQP/tmpquxhh0aj.jpg",
+    "name": "Denji and Pochita",
+    "anime": "Chainsaw Man",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8fe2ee11df3e7cac2d9e5d",
+    "id": "270",
+    "img_url": "https://i.ibb.co/v4NRpBZ8/tmpjz0-5fmm.jpg",
+    "name": "Sleepy Mita",
+    "anime": "Miside",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8fe31511df3e7cac2d9e5e",
+    "id": "271",
+    "img_url": "https://i.ibb.co/Csw7qS9p/tmp694fajrd.jpg",
+    "name": "Mila",
+    "anime": "Miside",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8fe50a11df3e7cac2d9e5f",
+    "id": "272",
+    "img_url": "https://i.ibb.co/v6vP2YTS/tmp74hig2v.jpg",
+    "name": "Mita",
+    "anime": "Miside",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8fe52d11df3e7cac2d9e61",
+    "id": "273",
+    "img_url": "https://i.ibb.co/nsYpDmXK/tmpkgb6i0xv.jpg",
+    "name": "Evil Mita",
+    "anime": "Miside",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8fe65211df3e7cac2d9e62",
+    "id": "274",
+    "img_url": "https://i.ibb.co/RG9nsT13/tmp58chpwns.jpg",
+    "name": "Cappie Mita",
+    "anime": "Miside",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8fe68511df3e7cac2d9e63",
+    "id": "275",
+    "img_url": "https://i.ibb.co/8Lm4NkFg/tmpbkjy4525.jpg",
+    "name": "Kinda Mita",
+    "anime": "Miside",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8fe70211df3e7cac2d9e64",
+    "id": "276",
+    "img_url": "https://i.ibb.co/0jcFmtFc/tmptvh5nopt.jpg",
+    "name": "Creepy Mita",
+    "anime": "Miside",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a8fe74011df3e7cac2d9e65",
+    "id": "277",
+    "img_url": "https://i.ibb.co/Q03Wy9S/tmpy63bzmwe.jpg",
+    "name": "Sleepy Mita",
+    "anime": "Miside",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a8fe76e11df3e7cac2d9e66",
+    "id": "278",
+    "img_url": "https://i.ibb.co/cXxFvX8J/tmpgjp67o5o.jpg",
+    "name": "Sleepy Mita",
+    "anime": "Miside",
+    "rarity": "Common",
+    "price": 200
+  },
+  {
+    "_id": "6a90715ad2ef96c82ad3283a",
+    "id": "279",
+    "img_url": "https://i.ibb.co/Tx80Qdks/tmpg-pomtf0.jpg",
+    "name": "Ushio Kofune",
+    "anime": "Summer Time Rendering",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a9071d2d2ef96c82ad3283b",
+    "id": "280",
+    "img_url": "https://i.ibb.co/FqJWFg36/tmp574gka-9.jpg",
+    "name": "Shinpei Ajiro",
+    "anime": "Summer Time Rendering",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a907282d2ef96c82ad3283c",
+    "id": "281",
+    "img_url": "https://i.ibb.co/b5CDcSKg/tmpy7nurrkf.jpg",
+    "name": "Hizuru Minakata",
+    "anime": "Summer Time Rendering",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a907464d2ef96c82ad3283e",
+    "id": "282",
+    "img_url": "https://i.ibb.co/D3k0rjW/tmph2ln4dvp.jpg",
+    "name": "Rudeus Greyrat",
+    "anime": "Mushoku Tensei",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a91344cd2ef96c82ad3285d",
+    "id": "283",
+    "img_url": "https://i.ibb.co/fGLw1xTj/tmp6ekcw8n8.jpg",
+    "name": "Shuna",
+    "anime": "Tensura",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a9134ded2ef96c82ad3285e",
+    "id": "284",
+    "img_url": "https://i.ibb.co/Ndyg8cKy/tmpvgvr3laz.jpg",
+    "name": "Shuna",
+    "anime": "Tensura",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a919a31f6512bf432de2280",
+    "id": "285",
+    "img_url": "https://files.catbox.moe/xkp41w.mp4",
+    "name": "Garou",
+    "anime": "One Punch Man",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a919d65f6512bf432de2281",
+    "id": "286",
+    "img_url": "https://files.catbox.moe/5cf1an.mp4",
+    "name": "Vivian Hugo",
+    "anime": "Blue Lock",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a919d94f6512bf432de2282",
+    "id": "287",
+    "img_url": "https://files.catbox.moe/8wva7w.mp4",
+    "name": "Itoshi Rin",
+    "anime": "Blue lock",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a91b4d3f6512bf432de228b",
+    "id": "288",
+    "img_url": "https://files.catbox.moe/6tug69.mp4",
+    "name": " Don Lorenzo",
+    "anime": "Blue Lock",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a928446f6512bf432de2290",
+    "id": "289",
+    "img_url": "https://files.catbox.moe/ruyje2.mp4",
+    "name": "Changsu OH",
+    "anime": "Lookism",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a930855f6512bf432de22a1",
+    "id": "290",
+    "img_url": "https://i.ibb.co/0RSDBrwh/tmpupzr3xov.jpg",
+    "name": "Iron Man",
+    "anime": "Marvel Series",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a932f62f6512bf432de22a5",
+    "id": "291",
+    "img_url": "https://files.catbox.moe/86cbg8.mp4",
+    "name": "Monkey D. Luffy",
+    "anime": "One Piece",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a93f7b98605253f7e38cf46",
+    "id": "292",
+    "img_url": "https://files.catbox.moe/9305s9.mp4",
+    "name": "Rukia Kuchiki",
+    "anime": "Bleach",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a9431d38605253f7e38cf49",
+    "id": "293",
+    "img_url": "https://i.ibb.co/yFPHJtqk/tmpg128xltk.jpg",
+    "name": "Spider Man",
+    "anime": "Marvel Series",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a9432978605253f7e38cf4a",
+    "id": "294",
+    "img_url": "https://i.ibb.co/yBRtHQzN/tmpadpq3zk3.jpg",
+    "name": "Loki",
+    "anime": "Marvel Series",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a9432e18605253f7e38cf4b",
+    "id": "295",
+    "img_url": "https://i.ibb.co/jZqvBn1q/tmpo4h2f8st.jpg",
+    "name": "Hawkeye",
+    "anime": "Marvel Series",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a94333d8605253f7e38cf4c",
+    "id": "296",
+    "img_url": "https://i.ibb.co/nNDhFN7g/tmpxfl28cxj.jpg",
+    "name": "Deadpool",
+    "anime": "Marvel Series",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a9433878605253f7e38cf4d",
+    "id": "297",
+    "img_url": "https://i.ibb.co/Fk16ZRwj/tmpejawhzfc.jpg",
+    "name": "Venom",
+    "anime": "Marvel Series",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a94364b8605253f7e38cf4e",
+    "id": "298",
+    "img_url": "https://i.ibb.co/5XFVF8HJ/tmpih2rcmsw.jpg",
+    "name": "Wolverine",
+    "anime": "Marvel Series",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a9436a18605253f7e38cf4f",
+    "id": "299",
+    "img_url": "https://i.ibb.co/Cs9DFMNk/tmpjnaddos8.jpg",
+    "name": "Marvel Universe",
+    "anime": " Marvel Series",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a9438ff8605253f7e38cf51",
+    "id": "300",
+    "img_url": "https://files.catbox.moe/81tfei.png",
+    "name": "Audrey Hall [ Miss Justice]",
+    "anime": "Lord Of The Mysteries",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a9439ed8605253f7e38cf52",
+    "id": "301",
+    "img_url": "https://i.ibb.co/rRGMx7YV/tmpid5mz5fq.jpg",
+    "name": "Klein Moretti",
+    "anime": "Lord Of The Mysteries",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a94434e8605253f7e38cf53",
+    "id": "302",
+    "img_url": "https://i.ibb.co/p6ymFmyn/tmpqlcrby72.jpg",
+    "name": "Noelle Silva",
+    "anime": "Black Clover",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a9444c88605253f7e38cf54",
+    "id": "303",
+    "img_url": "https://i.ibb.co/3Y7r7trf/tmpuwwv8pw6.jpg",
+    "name": "Dorothy Unsworth",
+    "anime": "Black Clover",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a9445bc8605253f7e38cf55",
+    "id": "304",
+    "img_url": "https://i.ibb.co/rGphJjm2/tmp3t6zxsm8.jpg",
+    "name": "Charlotte Roselei",
+    "anime": "Black Clover",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a9446728605253f7e38cf56",
+    "id": "305",
+    "img_url": "https://i.ibb.co/4Cgd515/tmp6vft9siv.jpg",
+    "name": "William Vangeance",
+    "anime": "Black Clover",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a9446a58605253f7e38cf57",
+    "id": "306",
+    "img_url": "https://i.ibb.co/fdb1gJSk/tmpd9w3zhwk.jpg",
+    "name": "Kings of Jeolla",
+    "anime": "Lookism",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a9446e28605253f7e38cf58",
+    "id": "307",
+    "img_url": "https://i.ibb.co/zVQmRZbj/tmpp73dt5i5.jpg",
+    "name": "Nozel Silva",
+    "anime": "Black Clover",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a94472c8605253f7e38cf59",
+    "id": "308",
+    "img_url": "https://i.ibb.co/yB5Dt07J/tmplalqd9ti.jpg",
+    "name": "Fuegoleon Vermilion",
+    "anime": "Black Clover",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a9447c28605253f7e38cf5a",
+    "id": "309",
+    "img_url": "https://i.ibb.co/392bGy9p/tmpe62703bu.jpg",
+    "name": "X",
+    "anime": "To Be Hero X",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a9447e28605253f7e38cf5b",
+    "id": "310",
+    "img_url": "https://i.ibb.co/ynfwgjw8/tmpet-nex1n.jpg",
+    "name": "Nice",
+    "anime": "To Be Hero X",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a9447fc8605253f7e38cf5c",
+    "id": "311",
+    "img_url": "https://i.ibb.co/tpS4K4cn/tmpplw2fbsi.jpg",
+    "name": "Yami Sukehiro",
+    "anime": "Black Clover",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a9448d68605253f7e38cf5d",
+    "id": "312",
+    "img_url": "https://i.ibb.co/HLJTXP1V/tmpqa9fgtwb.jpg",
+    "name": "Nero",
+    "anime": "Black Clover",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a9448d78605253f7e38cf5e",
+    "id": "313",
+    "img_url": "https://i.ibb.co/cKkCwLTs/tmp3p7d3vv6.jpg",
+    "name": "Queen",
+    "anime": "To Be Hero X",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a946a068605253f7e38cf62",
+    "id": "314",
+    "img_url": "https://i.ibb.co/nsmBz9ZB/tmpuflq99bx.jpg",
+    "name": "Kaori Miyazono",
+    "anime": "Your Lie In April",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a946bbf8605253f7e38cf63",
+    "id": "315",
+    "img_url": "https://i.ibb.co/6Sd4cvX/tmpp-fbah9a.jpg",
+    "name": "Arima Kousei",
+    "anime": "Your Lie In April",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a946ca78605253f7e38cf64",
+    "id": "316",
+    "img_url": "https://i.ibb.co/Jjw926Sh/tmpj97hijnp.jpg",
+    "name": "Tsubaki Sawabe",
+    "anime": "Your Lie In April",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a9474188605253f7e38cf66",
+    "id": "317",
+    "img_url": "https://i.ibb.co/Q7KCm66c/tmpyzxzzv8n.jpg",
+    "name": "Lucky Cyan",
+    "anime": "To Be Hero X",
+    "rarity": "Rare",
+    "price": 650
+  },
+  {
+    "_id": "6a9475448605253f7e38cf67",
+    "id": "318",
+    "img_url": "https://i.ibb.co/TxV1Mjxs/tmp22qefng3.jpg",
+    "name": "Lin Ling",
+    "anime": "To Be Hero X",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "STR",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a9479288605253f7e38cf68",
+    "id": "319",
+    "img_url": "https://i.ibb.co/fYX2BxVh/tmp-tiy3gqq.jpg",
+    "name": "Miku Nakano",
+    "anime": "Quintessential Quintuplets",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEF",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a94d13c8605253f7e38cf6d",
+    "id": "320",
+    "img_url": "https://files.catbox.moe/598er1.mp4",
+    "name": "Shoei Barou",
+    "anime": "Blue Lock",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a9594717e9b9f29601ff949",
+    "id": "321",
+    "img_url": "https://files.catbox.moe/3uljtz.mp4",
+    "name": "Qin Shi Yuang",
+    "anime": "Record Of Ragnarok",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a96fb887e9b9f29601ff952",
+    "id": "322",
+    "img_url": "https://files.catbox.moe/td2ldq.mp4",
+    "name": "Naruto",
+    "anime": "Naruto/Boruto",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a9709ab7e9b9f29601ff955",
+    "id": "323",
+    "img_url": "https://i.ibb.co/0Rx6z3g8/tmpo6szra1g.jpg",
+    "name": "Iris",
+    "anime": "The Spike Cross",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "DEX",
+      "value": 5
+    }
+  },
+  {
+    "_id": "6a9855aa8347432e8d7ab11e",
+    "id": "324",
+    "img_url": "https://files.catbox.moe/hs2tsr.mp4",
+    "name": "Ubers",
+    "anime": "Blue Lock",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a98564d8347432e8d7ab11f",
+    "id": "325",
+    "img_url": "https://files.catbox.moe/mslm8h.mp4",
+    "name": "Mashine City",
+    "anime": "Blue Lock",
+    "rarity": "Mythic",
+    "price": 8500
+  },
+  {
+    "_id": "6a9b3162ade776220fe28cbf",
+    "id": "326",
+    "img_url": "https://i.ibb.co/HDYCvqFX/tmpiyw3n0gh.jpg",
+    "name": "Inoue Orihime",
+    "anime": "Bleach",
+    "rarity": "Legendary",
+    "price": 3500,
+    "stat": {
+      "type": "SPD",
+      "value": 5
+    }
+  }
+]

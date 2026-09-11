@@ -70,8 +70,8 @@ export default function CombatSandbox() {
       if (dodged) {
         const logEntry = {
           id: Date.now(),
-          action: isHeavy ? '⚡ Heavy Attack' : '⚔️ Light Attack',
-          result: '💨 DODGED! The defender evaded the strike.',
+          action: isHeavy ? 'Heavy Attack' : 'Light Attack',
+          result: 'DODGED! The defender evaded the strike.',
           dmg: 0,
           isCrit: false,
           tags: ['DODGE'],
@@ -159,7 +159,7 @@ export default function CombatSandbox() {
         {/* Defender */}
         <div className="glass-card rounded-xl p-4 space-y-3">
           <div className="text-xs font-mono text-rose-400 uppercase tracking-wider mb-2 flex items-center gap-2">
-            🛡️ Defender Stats
+            Defender Stats
           </div>
           <StatInput label="DEF" stateKey="def" statState={defenderStats} setStatState={setDefenderStats} color="text-violet-400" />
           <StatInput label="SPD" stateKey="spd" statState={defenderStats} setStatState={setDefenderStats} color="text-emerald-400" />
@@ -209,10 +209,10 @@ export default function CombatSandbox() {
         <div className="text-xs font-mono text-zinc-400 uppercase tracking-wider mb-2">Combat Modifiers</div>
         <div className="grid grid-cols-2 gap-2">
           {[
-            { label: '⚡ Heavy Attack (×1.8)', key: 'heavy', val: isHeavy, set: setIsHeavy, activeColor: 'border-amber-500/40 bg-amber-500/10 text-amber-400' },
-            { label: '🛡️ Guard Counter (+35%)', key: 'gc', val: guardCounter, set: setGuardCounter, activeColor: 'border-amber-500/40 bg-amber-500/10 text-amber-400' },
-            { label: '🔰 Defender Guarding', key: 'dg', val: defGuarding, set: setDefGuarding, activeColor: 'border-violet-500/40 bg-violet-500/10 text-violet-400' },
-            { label: '💨 Defender Dodging', key: 'dd', val: defDodging, set: setDefDodging, activeColor: 'border-emerald-500/40 bg-emerald-500/10 text-emerald-400' },
+            { label: 'Heavy Attack (×1.8)', key: 'heavy', val: isHeavy, set: setIsHeavy, activeColor: 'border-amber-500/40 bg-amber-500/10 text-amber-400' },
+            { label: 'Guard Counter (+35%)', key: 'gc', val: guardCounter, set: setGuardCounter, activeColor: 'border-amber-500/40 bg-amber-500/10 text-amber-400' },
+            { label: 'Defender Guarding', key: 'dg', val: defGuarding, set: setDefGuarding, activeColor: 'border-violet-500/40 bg-violet-500/10 text-violet-400' },
+            { label: 'Defender Dodging', key: 'dd', val: defDodging, set: setDefDodging, activeColor: 'border-emerald-500/40 bg-emerald-500/10 text-emerald-400' },
           ].map(toggle => (
             <button
               key={toggle.key}

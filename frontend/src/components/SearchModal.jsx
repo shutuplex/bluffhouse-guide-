@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, X, Sword, Sparkles, Terminal, ChevronRight } from 'lucide-react';
-import { WEAPONS_DATABASE, ANIME_CARDS_DATABASE, BOT_COMMANDS } from '../data/gameData';
+import { Search, X, Sword, Sparkles, Terminal, ChevronRight, Skull } from 'lucide-react';
+import { WEAPONS_DATABASE, ANIME_CARDS_DATABASE, BOT_COMMANDS, ALL_ENEMIES } from '../data/gameData';
 
 export default function SearchModal({ isOpen, onClose, onNavigate }) {
   const [query, setQuery] = useState('');
@@ -26,11 +26,15 @@ export default function SearchModal({ isOpen, onClose, onNavigate }) {
     ? ANIME_CARDS_DATABASE.filter(c => c.name.toLowerCase().includes(q) || c.anime.toLowerCase().includes(q) || c.rarity.toLowerCase().includes(q)).slice(0, 4)
     : [];
 
+  const matchingEnemies = q
+    ? ALL_ENEMIES.filter(e => e.name.toLowerCase().includes(q) || e.tier.toLowerCase().includes(q)).slice(0, 4)
+    : [];
+
   const matchingCommands = q
     ? BOT_COMMANDS.filter(cmd => cmd.command.toLowerCase().includes(q) || cmd.desc.toLowerCase().includes(q)).slice(0, 4)
     : [];
 
-  const hasResults = matchingWeapons.length || matchingCards.length || matchingCommands.length;
+  const hasResults = matchingWeapons.length || matchingCards.length || matchingEnemies.length || matchingCommands.length;
 
   const handleSelect = (page) => {
     onNavigate(page);
@@ -134,6 +138,27 @@ export default function SearchModal({ isOpen, onClose, onNavigate }) {
                   <div>
                     <div className="text-xs font-bold text-white">{c.name}</div>
                     <div className="text-[11px] text-zinc-300 font-mono">{c.anime} · {c.rarity}</div>
+                  </div>
+                  <ChevronRight className="w-3.5 h-3.5 text-zinc-400" />
+                </button>
+              ))}
+            </div>
+          )}
+
+          {matchingEnemies.length > 0 && (
+            <div className="space-y-2">
+              <div className="text-[11px] font-mono text-zinc-400 uppercase tracking-wider font-semibold flex items-center gap-1.5">
+                <Skull className="w-3.5 h-3.5 text-white" /> Encounters & Bosses
+              </div>
+              {matchingEnemies.map(e => (
+                <button
+                  key={e.id}
+                  onClick={() => handleSelect('enemies')}
+                  className="w-full flex items-center justify-between p-3 rounded-xl glass-badge border border-white/10 hover:border-white/20 hover:bg-white/10 text-left transition-all cursor-pointer"
+                >
+                  <div>
+                    <div className="text-xs font-bold text-white">{e.name}</div>
+                    <div className="text-[11px] text-zinc-300 font-mono">{e.tier} · {e.hp} HP · {e.base_dmg} DMG</div>
                   </div>
                   <ChevronRight className="w-3.5 h-3.5 text-zinc-400" />
                 </button>

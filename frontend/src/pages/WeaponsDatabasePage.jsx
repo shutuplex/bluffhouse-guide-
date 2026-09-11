@@ -1,10 +1,10 @@
-import React from 'react';
-import { Sword, ShoppingBag, Hammer } from 'lucide-react';
+import { Sword, ShoppingBag } from 'lucide-react';
 import { WEAPONS_DATABASE, getDailyWeapons } from '../data/gameData';
 import Callout from '../components/ui/Callout';
 import CommandBadge, { InlineCode } from '../components/ui/CommandBadge';
 import CopyButton from '../components/CopyButton';
 import UpgradeSimulator from '../components/tools/UpgradeSimulator';
+import WeaponsShowcase from '../components/WeaponsShowcase';
 
 export default function WeaponsDatabasePage() {
   const SHARD_EXAMPLES = [
@@ -113,6 +113,9 @@ export default function WeaponsDatabasePage() {
           ))}
         </div>
       </section>
+
+      {/* Weapons Database Showcase */}
+      <WeaponsShowcase />
 
       {/* Armory & Equipment Quick Reference */}
       <section className="space-y-4">

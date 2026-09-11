@@ -29,10 +29,11 @@ const NAV_SECTIONS = [
     label: 'Weapons & Smithy',
     page: 'weapons',
     items: [
+      { label: 'Weapons Armory (47)', page: 'weapons', highlight: true },
       { label: 'Weapon Tiers', page: 'weapons' },
       { label: 'Daily Shop — /wshop', page: 'weapons' },
       { label: 'Smithy Upgrades — /upgrade', page: 'weapons' },
-      { label: 'Upgrade Simulator', page: 'weapons', highlight: true },
+      { label: 'Upgrade Simulator', page: 'weapons' },
     ]
   },
   {
@@ -52,6 +53,7 @@ const NAV_SECTIONS = [
     label: 'Encounters & Drops',
     page: 'enemies',
     items: [
+      { label: 'Bestiary Showcase (36)', page: 'enemies', highlight: true },
       { label: 'Spawn Rates', page: 'enemies' },
       { label: 'Drop Rewards', page: 'enemies' },
     ]
@@ -72,6 +74,7 @@ const NAV_SECTIONS = [
     label: 'Anime Card Dex',
     page: 'cards',
     items: [
+      { label: 'Characters Showcase (326)', page: 'cards', highlight: true },
       { label: 'Gacha System', page: 'cards' },
       { label: 'Legendary Talismans', page: 'cards' },
     ]

@@ -1,7 +1,6 @@
-import React from 'react';
 import { Sparkles, Star } from 'lucide-react';
 import Callout from '../components/ui/Callout';
-import CommandBadge from '../components/ui/CommandBadge';
+import CharactersShowcase from '../components/CharactersShowcase';
 
 const RARITY_META = {
   Common:    { stars: 1, color: 'text-zinc-300' },
@@ -143,6 +142,9 @@ export default function CardDexPage() {
           </div>
         </div>
       </section>
+
+      {/* Anime Characters Showcase */}
+      <CharactersShowcase />
 
     </div>
   );
