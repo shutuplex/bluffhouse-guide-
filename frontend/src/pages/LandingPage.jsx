@@ -54,7 +54,7 @@ export default function LandingPage({ onNavigate }) {
           </div>
 
           <p className="text-zinc-200 text-sm sm:text-base leading-relaxed max-w-xl">
-            The definitive companion guide for the RPG bot. Simulate your character build, inspect all 326 anime character cards, browse 47 armaments, examine 36 boss encounters, and calculate weapon upgrade costs.
+            The definitive companion guide for the RPG bot. Simulate your character build, inspect all anime character cards, browse armaments, examine boss encounters, and calculate weapon upgrade costs.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-2.5 sm:gap-3 pt-1 sm:pt-2">
