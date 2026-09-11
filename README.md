@@ -1,6 +1,6 @@
 # bluffhouse — Game Mechanics & Minimalistic Glassmorphic Web UI
 
-<img src="https://files.catbox.moe/z6ewwn.gif" alt="Bluffhouse Logo" width="100%" />
+<img src="https://files.catbox.moe/vi6xwa.gif" alt="Bluffhouse Logo" width="100%" />
 
 > **Guide for game mechanics and example of minimalistic web Ui using React**
 
