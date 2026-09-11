@@ -1,8 +1,8 @@
 import { useState, useMemo } from 'react';
-import { Search, Sparkles, ArrowUpDown, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Search, Sparkles, ArrowUpDown, ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
 import { CHARACTERS_DATA, CHARACTER_ANIMES, CHARACTER_RARITIES, STAT_TYPES } from '../data/charactersData';
 import MediaPreview from './ui/MediaPreview';
-import CopyButton from './CopyButton';
+import CardDetailModal from './ui/CardDetailModal';
 
 const RARITY_STYLES = {
   'Mythic': {
@@ -53,6 +53,7 @@ export default function CharactersShowcase() {
   const [selectedStat, setSelectedStat] = useState('All Stats');
   const [sortBy, setSortBy] = useState('id-asc');
   const [currentPage, setCurrentPage] = useState(1);
+  const [selectedCharacter, setSelectedCharacter] = useState(null);
 
   const filteredCharacters = useMemo(() => {
     let list = CHARACTERS_DATA.filter(char => {
@@ -271,7 +272,11 @@ export default function CharactersShowcase() {
               return (
                 <div
                   key={char.id}
-                  className={`glass-card rounded-2xl border ${rarityStyle.border} overflow-hidden flex flex-col justify-between group transition-all`}
+                  onClick={() => setSelectedCharacter(char)}
+                  className={`glass-card rounded-2xl border ${rarityStyle.border} overflow-hidden flex flex-col justify-between group transition-all cursor-pointer hover:-translate-y-1 hover:shadow-xl`}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={e => e.key === 'Enter' && setSelectedCharacter(char)}
                 >
                   {/* Media Aspect Container */}
                   <div className="relative">
@@ -332,14 +337,13 @@ export default function CharactersShowcase() {
                       )}
                     </div>
 
-                    {/* Quick Pouch Equip Hint */}
-                    <div className="pt-1.5 border-t border-white/10 flex items-center justify-between gap-1">
-                      <code className="text-[10px] font-mono text-zinc-400 truncate">
-                        ID: {char.id}
-                      </code>
-                      {(char.rarity === 'Legendary' || char.rarity === 'Mythic' || char.rarity === 'Summer Edition') && (
-                        <CopyButton text={`/pouch_equip 1 ${char.id}`} label="Equip" />
-                      )}
+                    {/* Card Footer: ID & Inspect */}
+                    <div className="pt-1.5 border-t border-white/10 flex items-center justify-between gap-1 text-[10px] font-mono text-zinc-400">
+                      <span>ID: #{char.id}</span>
+                      <span className="text-zinc-500 group-hover:text-zinc-300 flex items-center gap-1 transition-colors">
+                        Inspect
+                        <Maximize2 className="w-2.5 h-2.5" />
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -386,6 +390,14 @@ export default function CharactersShowcase() {
           )}
         </>
       )}
+
+      {/* Card Detail Inspector Modal */}
+      <CardDetailModal
+        isOpen={!!selectedCharacter}
+        onClose={() => setSelectedCharacter(null)}
+        item={selectedCharacter}
+        type="character"
+      />
     </section>
   );
 }

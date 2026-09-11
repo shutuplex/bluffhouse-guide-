@@ -1,8 +1,9 @@
 import { useState, useMemo } from 'react';
-import { Search, Sword, Shield, ArrowUpDown, Flame, Droplets, Skull, Sparkles } from 'lucide-react';
+import { Search, Sword, Shield, ArrowUpDown, Flame, Droplets, Skull, Sparkles, Maximize2 } from 'lucide-react';
 import { WEAPONS_DATA, WEAPON_TYPES, STATUS_EFFECTS } from '../data/weaponsData';
 import MediaPreview from './ui/MediaPreview';
 import CopyButton from './CopyButton';
+import CardDetailModal from './ui/CardDetailModal';
 
 const STATUS_CONFIG = {
   'Blood Loss': {
@@ -39,6 +40,7 @@ export default function WeaponsShowcase() {
   const [selectedType, setSelectedType] = useState('All Types');
   const [selectedEffect, setSelectedEffect] = useState('All Effects');
   const [sortBy, setSortBy] = useState('id-asc');
+  const [selectedWeapon, setSelectedWeapon] = useState(null);
 
   const filteredWeapons = useMemo(() => {
     let list = WEAPONS_DATA.filter(w => {
@@ -241,7 +243,11 @@ export default function WeaponsShowcase() {
             return (
               <div
                 key={weapon.id}
-                className="glass-card rounded-2xl border border-white/15 hover:border-white/30 overflow-hidden flex flex-col justify-between group transition-all"
+                onClick={() => setSelectedWeapon(weapon)}
+                className="glass-card rounded-2xl border border-white/15 hover:border-white/30 overflow-hidden flex flex-col justify-between group transition-all cursor-pointer hover:-translate-y-1 hover:shadow-xl"
+                role="button"
+                tabIndex={0}
+                onKeyDown={e => e.key === 'Enter' && setSelectedWeapon(weapon)}
               >
                 {/* Image Banner */}
                 <div className="relative">
@@ -281,10 +287,13 @@ export default function WeaponsShowcase() {
 
                 {/* Content Body */}
                 <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-4">
-                  <div>
+                  <div className="flex items-start justify-between gap-2">
                     <h3 className="text-base sm:text-lg font-bold text-white tracking-tight leading-snug group-hover:text-zinc-100 transition-colors">
                       {weapon.name}
                     </h3>
+                    <span className="p-1 rounded-lg text-zinc-500 group-hover:text-white transition-colors flex-shrink-0" title="Inspect full weapon">
+                      <Maximize2 className="w-3.5 h-3.5" />
+                    </span>
                   </div>
 
                   {/* Core Combat Stats Matrix */}
@@ -333,7 +342,10 @@ export default function WeaponsShowcase() {
                   </div>
 
                   {/* Actions: Equip & Buy Command Codes */}
-                  <div className="pt-3 border-t border-white/10 flex items-center justify-between gap-2">
+                  <div
+                    className="pt-3 border-t border-white/10 flex items-center justify-between gap-2"
+                    onClick={e => e.stopPropagation()}
+                  >
                     <div className="flex items-center gap-2">
                       <code className="text-xs font-mono text-zinc-300 bg-white/5 px-2 py-1 rounded-md border border-white/10">
                         /equip {weapon.id}
@@ -353,6 +365,14 @@ export default function WeaponsShowcase() {
           })}
         </div>
       )}
+
+      {/* Weapon Detail Inspector Modal */}
+      <CardDetailModal
+        isOpen={!!selectedWeapon}
+        onClose={() => setSelectedWeapon(null)}
+        item={selectedWeapon}
+        type="weapon"
+      />
     </section>
   );
 }

@@ -1,8 +1,9 @@
 import { useState, useMemo } from 'react';
-import { Search, Skull, Heart, Gift, ArrowUpDown } from 'lucide-react';
+import { Search, Skull, Heart, Gift, ArrowUpDown, Maximize2 } from 'lucide-react';
 import { ENEMIES_DATA, ENEMY_TIERS } from '../data/enemiesData';
 import MediaPreview from './ui/MediaPreview';
 import CopyButton from './CopyButton';
+import CardDetailModal from './ui/CardDetailModal';
 
 const TIER_META = {
   'Common': {
@@ -32,6 +33,7 @@ export default function EnemiesShowcase() {
   const [selectedTier, setSelectedTier] = useState('All Tiers');
   const [dropFilter, setDropFilter] = useState('all');
   const [sortBy, setSortBy] = useState('id-asc');
+  const [selectedEnemy, setSelectedEnemy] = useState(null);
 
   const filteredEnemies = useMemo(() => {
     let list = ENEMIES_DATA.filter(enemy => {
@@ -220,7 +222,11 @@ export default function EnemiesShowcase() {
             return (
               <div
                 key={enemy.id}
-                className="glass-card rounded-2xl border border-white/15 hover:border-white/30 overflow-hidden flex flex-col justify-between group transition-all"
+                onClick={() => setSelectedEnemy(enemy)}
+                className="glass-card rounded-2xl border border-white/15 hover:border-white/30 overflow-hidden flex flex-col justify-between group transition-all cursor-pointer hover:-translate-y-1 hover:shadow-xl"
+                role="button"
+                tabIndex={0}
+                onKeyDown={e => e.key === 'Enter' && setSelectedEnemy(enemy)}
               >
                 {/* Image Banner */}
                 <div className="relative">
@@ -254,10 +260,13 @@ export default function EnemiesShowcase() {
 
                 {/* Body Content */}
                 <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-4">
-                  <div>
+                  <div className="flex items-start justify-between gap-2">
                     <h3 className="text-base sm:text-lg font-bold text-white tracking-tight leading-snug group-hover:text-zinc-100 transition-colors">
                       {enemy.name}
                     </h3>
+                    <span className="p-1 rounded-lg text-zinc-500 group-hover:text-white transition-colors flex-shrink-0" title="Inspect dossier">
+                      <Maximize2 className="w-3.5 h-3.5" />
+                    </span>
                   </div>
 
                   {/* Combat Stats Grid */}
@@ -333,7 +342,10 @@ export default function EnemiesShowcase() {
                   </div>
 
                   {/* Action Command Hint */}
-                  <div className="pt-3 border-t border-white/10 flex items-center justify-between">
+                  <div
+                    className="pt-3 border-t border-white/10 flex items-center justify-between"
+                    onClick={e => e.stopPropagation()}
+                  >
                     <div className="flex items-center gap-2">
                       <code className="text-xs font-mono text-zinc-300 bg-white/5 px-2 py-1 rounded-md border border-white/10">
                         {tierInfo.huntCmd}
@@ -350,6 +362,14 @@ export default function EnemiesShowcase() {
           })}
         </div>
       )}
+
+      {/* Enemy Detail Inspector Modal */}
+      <CardDetailModal
+        isOpen={!!selectedEnemy}
+        onClose={() => setSelectedEnemy(null)}
+        item={selectedEnemy}
+        type="enemy"
+      />
     </section>
   );
 }
