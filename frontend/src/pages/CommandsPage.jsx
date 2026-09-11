@@ -129,12 +129,6 @@ export default function CommandsPage() {
         </div>
       )}
 
-      {/* Usage instructions */}
-      <div className="glass-panel rounded-2xl p-5 border border-white/15">
-        <div className="text-xs text-zinc-200 leading-relaxed">
-          <strong className="text-white font-semibold">Syntax Convention:</strong> Parameters in <code className="text-white bg-white/10 px-1.5 py-0.5 rounded font-mono">[brackets]</code> are optional arguments, while parameters in <code className="text-white bg-white/10 px-1.5 py-0.5 rounded font-mono">{'<angle brackets>'}</code> are required for execution.
-        </div>
-      </div>
 
     </div>
   );
