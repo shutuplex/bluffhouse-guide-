@@ -369,13 +369,37 @@ export default function CardDetailModal({ isOpen, onClose, item, type }) {
                     <div className="text-[10px] text-zinc-400 uppercase tracking-wider">Talisman Pouch Attribute</div>
                     
                     {item.rarity === 'Mythic' ? (
-                      <div className="p-3 rounded-xl border border-purple-500/40 bg-purple-500/10 text-purple-200 space-y-1">
-                        <div className="flex items-center gap-2 font-bold text-sm">
-                          <Sparkles className="w-4 h-4 text-purple-300" />
-                          <span>Pinnacle Mythic Blessing: +50 Max HP Pool</span>
+                      <div className="p-3 rounded-xl border border-purple-500/40 bg-purple-500/10 text-purple-200 space-y-2">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-2 font-bold text-sm">
+                            <Sparkles className="w-4 h-4 text-purple-300" />
+                            <span>Pinnacle Mythic Blessing: +50 Max HP</span>
+                          </div>
+                          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-900/60 border border-purple-500/30 text-purple-200 font-bold">
+                            1 Mythic Limit
+                          </span>
                         </div>
+
+                        {item.id === '289' && (
+                          <div className="p-2.5 rounded-lg bg-black/40 border border-purple-500/30 space-y-1">
+                            <div className="text-xs font-bold text-purple-300">✦ Lord of Blood's Exultation</div>
+                            <p className="text-[11px] text-zinc-300 leading-relaxed">
+                              Landing a Blood Loss hit triggers +20% ATK damage on your next 3 strikes (PvP, PvE Hunts, World Boss Raids).
+                            </p>
+                          </div>
+                        )}
+
+                        {item.id === '189' && (
+                          <div className="p-2.5 rounded-lg bg-black/40 border border-purple-500/30 space-y-1">
+                            <div className="text-xs font-bold text-purple-300">✦ Vampiric Rot</div>
+                            <p className="text-[11px] text-zinc-300 leading-relaxed">
+                              100% of Scarlet Rot DoT ticks heal your character directly (PvP, PvE Hunts, World Boss Raids).
+                            </p>
+                          </div>
+                        )}
+
                         <p className="text-[11px] text-zinc-400 leading-relaxed">
-                          Equipping this Mythic card into any unlocked Talisman Pouch expands your total health by 50 HP in PvE and PvP combat.
+                          Equipping this card expands your total health by 50 HP. Only 1 active Mythic may be equipped at a time (auto-swaps in-place).
                         </p>
                       </div>
                     ) : item.stat ? (

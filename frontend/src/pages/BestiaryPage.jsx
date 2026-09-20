@@ -66,7 +66,7 @@ export default function BestiaryPage() {
       {/* Drop Rewards Table */}
       <section className="space-y-3 sm:space-y-4">
         <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-          <span className="text-zinc-400 font-mono text-xs sm:text-sm">02.</span> Drop Table & Rewards
+          <span className="text-zinc-400 font-mono text-xs sm:text-sm">03.</span> Drop Table & Rewards
         </h2>
         <div className="glass-card rounded-2xl overflow-hidden border border-white/15">
           <div className="overflow-x-auto">
@@ -91,6 +91,87 @@ export default function BestiaryPage() {
                     <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-zinc-200">{row.xp}</td>
                     <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-zinc-200 font-semibold">{row.shards}</td>
                     <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-zinc-300">{row.weapon}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Wild Challenger 1v1 Encounters */}
+      <section className="space-y-4 pt-6 border-t border-white/10">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div>
+            <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+              <span className="text-zinc-400 font-mono text-xs sm:text-sm">04.</span> Wild Challenger 1v1 Encounters
+            </h2>
+            <p className="text-xs text-zinc-300 font-mono mt-0.5">
+              Spawns dynamically in active chat groups every 100 messages.
+            </p>
+          </div>
+          <span className="px-2.5 py-1 rounded-md bg-purple-500/15 border border-purple-500/30 text-purple-200 font-mono text-xs font-semibold self-start sm:self-auto">
+            100 Chat Messages Trigger
+          </span>
+        </div>
+
+        <Callout variant="tip" title="Exclusive Claim Mechanics & Duplicate Protection">
+          When a wild challenger spawns in the group, the <strong>first player to tap [Accept Challenge]</strong> claims the duel exclusively. If you defeat the challenger and win a character card you already own, it automatically converts into <strong>+50 Bonus Shards</strong>.
+        </Callout>
+
+        {/* Combat Moves Reference */}
+        <div className="glass-card rounded-2xl p-5 border border-white/15 space-y-3">
+          <div className="text-xs font-mono text-zinc-300 uppercase tracking-wider font-semibold">Challenger Duel Actions</div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+            <div className="glass-badge rounded-xl p-3 border-white/10">
+              <div className="text-xs font-mono font-bold text-white">Strike</div>
+              <div className="text-[11px] text-zinc-300 mt-0.5">Standard offensive hit scaled by STR/DEX</div>
+            </div>
+            <div className="glass-badge rounded-xl p-3 border-white/10">
+              <div className="text-xs font-mono font-bold text-amber-300">Heavy Strike</div>
+              <div className="text-[11px] text-zinc-300 mt-0.5">1.8× burst DMG with a 2-turn cooldown</div>
+            </div>
+            <div className="glass-badge rounded-xl p-3 border-white/10">
+              <div className="text-xs font-mono font-bold text-emerald-300">Guard</div>
+              <div className="text-[11px] text-zinc-300 mt-0.5">Block incoming DMG & prime counter (+35%)</div>
+            </div>
+            <div className="glass-badge rounded-xl p-3 border-white/10">
+              <div className="text-xs font-mono font-bold text-sky-300">Dodge</div>
+              <div className="text-[11px] text-zinc-300 mt-0.5">Full evasion & gain First-Strike priority</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Challenger Tier Scaling Table */}
+        <div className="glass-card rounded-2xl overflow-hidden border border-white/15">
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs font-mono min-w-[500px]">
+              <thead>
+                <tr className="border-b border-white/15 bg-white/[0.04]">
+                  <th className="text-left px-5 py-3.5 text-zinc-200 font-semibold uppercase tracking-wider text-[11px]">Challenger Tier</th>
+                  <th className="text-left px-5 py-3.5 text-zinc-200 font-semibold uppercase tracking-wider text-[11px]">Vitality (HP)</th>
+                  <th className="text-left px-5 py-3.5 text-zinc-200 font-semibold uppercase tracking-wider text-[11px]">Base Attack</th>
+                  <th className="text-left px-5 py-3.5 text-zinc-200 font-semibold uppercase tracking-wider text-[11px]">Shard Bounty</th>
+                  <th className="text-right px-5 py-3.5 text-zinc-200 font-semibold uppercase tracking-wider text-[11px]">Card Drop %</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-white/10">
+                {[
+                  { tier: 'Common',    hp: '800 HP',   atk: '35 ATK',  shards: '35 ◈',  drop: '75% Drop', dup: '+50 ◈ if owned' },
+                  { tier: 'Rare',      hp: '1,400 HP', atk: '60 ATK',  shards: '65 ◈',  drop: '50% Drop', dup: '+50 ◈ if owned' },
+                  { tier: 'Medium',    hp: '2,200 HP', atk: '95 ATK',  shards: '100 ◈', drop: '35% Drop', dup: '+50 ◈ if owned' },
+                  { tier: 'Legendary', hp: '3,500 HP', atk: '140 ATK', shards: '200 ◈', drop: '20% Drop', dup: '+50 ◈ if owned' },
+                ].map(c => (
+                  <tr key={c.tier} className="hover:bg-white/[0.04] transition-colors">
+                    <td className="px-5 py-4 font-bold text-white">{c.tier}</td>
+                    <td className="px-5 py-4 text-rose-300 font-semibold">{c.hp}</td>
+                    <td className="px-5 py-4 text-zinc-200">{c.atk}</td>
+                    <td className="px-5 py-4 text-amber-300 font-semibold">{c.shards}</td>
+                    <td className="px-5 py-4 text-right">
+                      <span className="px-2 py-0.5 rounded bg-white/10 text-white font-bold">
+                        {c.drop}
+                      </span>
+                    </td>
                   </tr>
                 ))}
               </tbody>

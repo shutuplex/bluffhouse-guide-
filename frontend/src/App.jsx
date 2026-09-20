@@ -10,8 +10,9 @@ import CombatSimulatorPage from './pages/CombatSimulatorPage';
 import CardDexPage from './pages/CardDexPage';
 import MiniGamesPage from './pages/MiniGamesPage';
 import CommandsPage from './pages/CommandsPage';
+import ClansPage from './pages/ClansPage';
 
-const PAGES = ['overview', 'rpg', 'weapons', 'enemies', 'combat-sim', 'cards', 'minigames', 'commands'];
+const PAGES = ['overview', 'rpg', 'weapons', 'enemies', 'combat-sim', 'cards', 'clans', 'minigames', 'commands'];
 
 export default function App() {
   const [activePage, setActivePage] = useState('overview');
@@ -91,6 +92,7 @@ export default function App() {
           {activePage === 'enemies'     && <BestiaryPage />}
           {activePage === 'combat-sim'  && <CombatSimulatorPage />}
           {activePage === 'cards'       && <CardDexPage />}
+          {activePage === 'clans'       && <ClansPage onNavigate={handleNavigate} />}
           {activePage === 'minigames'   && <MiniGamesPage />}
           {activePage === 'commands'    && <CommandsPage />}
         </main>

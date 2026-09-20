@@ -3,7 +3,7 @@ import React from 'react';
 export default function GlassCard({ children, className = '', hover = true, glow = false }) {
   return (
     <div
-      className={`glass-card rounded-xl ${hover ? '' : 'hover:border-white/[0.06] hover:bg-[rgba(18,18,24,0.55)]'} ${glow ? 'golden-glow' : ''} ${className}`}
+      className={`glass-card rounded-xl ${hover ? '' : 'hover:border-white/6 hover:bg-[rgba(18,18,24,0.55)]'} ${glow ? 'golden-glow' : ''} ${className}`}
     >
       {children}
     </div>

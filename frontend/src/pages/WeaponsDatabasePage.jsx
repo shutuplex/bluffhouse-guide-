@@ -1,5 +1,5 @@
-import { Sword, ShoppingBag } from 'lucide-react';
-import { WEAPONS_DATABASE, getDailyWeapons } from '../data/gameData';
+import { Sword, ShoppingBag, Sparkles, Coins, Tag } from 'lucide-react';
+import { WEAPONS_DATABASE, getDailyWeapons, SHOP_PRICING, ELDEN_RING_DLC_WEAPON_CATEGORIES } from '../data/gameData';
 import Callout from '../components/ui/Callout';
 import CommandBadge, { InlineCode } from '../components/ui/CommandBadge';
 import CopyButton from '../components/CopyButton';
@@ -112,6 +112,112 @@ export default function WeaponsDatabasePage() {
                 <code className="text-xs font-mono text-zinc-300">/buy {w.id}</code>
                 <CopyButton text={`/buy ${w.id}`} label="Copy" />
               </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Calibrated Shop Pricing Guide */}
+      <section className="space-y-4 pt-6 border-t border-white/10">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div>
+            <h2 className="text-xl font-bold text-white flex items-center gap-2">
+              <Coins className="w-5 h-5 text-white" /> Calibrated Shop & Market Pricing — <CommandBadge cmd="/shop" /> <CommandBadge cmd="/wshop" />
+            </h2>
+            <p className="text-xs text-zinc-300 font-mono mt-1">
+              Standardized economy valuations for Character Cards and Armaments across all rarity brackets.
+            </p>
+          </div>
+          <span className="px-2.5 py-1 rounded-md bg-white/10 text-white font-mono text-xs font-semibold self-start sm:self-auto border border-white/15">
+            Economy Rebalanced
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {/* Character Cards Pricing Table */}
+          <div className="glass-card rounded-2xl p-5 border border-white/15 space-y-3">
+            <div className="flex items-center gap-2">
+              <Sparkles className="w-4 h-4 text-purple-300" />
+              <h3 className="font-bold text-white text-sm">Character Cards Market Value</h3>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs font-mono">
+                <thead>
+                  <tr className="border-b border-white/10 text-zinc-400">
+                    <th className="text-left pb-2">Rarity</th>
+                    <th className="text-left pb-2">Price Range</th>
+                    <th className="text-left pb-2">Classification</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/5">
+                  {SHOP_PRICING.characterCards.map(c => (
+                    <tr key={c.rarity} className="hover:bg-white/[0.04]">
+                      <td className="py-2.5 font-bold text-white">{c.rarity}</td>
+                      <td className="py-2.5 text-amber-300 font-semibold">{c.range}</td>
+                      <td className="py-2.5 text-zinc-300 text-[11px]">{c.desc}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Weapons Pricing Table */}
+          <div className="glass-card rounded-2xl p-5 border border-white/15 space-y-3">
+            <div className="flex items-center gap-2">
+              <Sword className="w-4 h-4 text-sky-300" />
+              <h3 className="font-bold text-white text-sm">Weapons Armory Pricing</h3>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs font-mono">
+                <thead>
+                  <tr className="border-b border-white/10 text-zinc-400">
+                    <th className="text-left pb-2">Category</th>
+                    <th className="text-left pb-2">Price Range</th>
+                    <th className="text-left pb-2">Classification</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/5">
+                  {SHOP_PRICING.weapons.map(w => (
+                    <tr key={w.tier} className="hover:bg-white/[0.04]">
+                      <td className="py-2.5 font-bold text-white">{w.tier}</td>
+                      <td className="py-2.5 text-amber-300 font-semibold">{w.price}</td>
+                      <td className="py-2.5 text-zinc-300 text-[11px]">{w.desc}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Elden Ring DLC Weapons Showcase */}
+      <section className="space-y-4 pt-6 border-t border-white/10">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div>
+            <h2 className="text-xl font-bold text-white flex items-center gap-2">
+              <Sword className="w-5 h-5 text-white" /> Elden Ring DLC Armaments (30+ Weapons)
+            </h2>
+            <p className="text-xs text-zinc-300 font-mono mt-1">
+              Expanded Tier 2 and Tier 3 weapon classes introducing unique stance combos, martial arts, and rapid dual-wield mechanics.
+            </p>
+          </div>
+          <span className="px-2.5 py-1 rounded-md bg-amber-500/15 border border-amber-500/30 text-amber-200 font-mono text-xs font-semibold self-start sm:self-auto">
+            7 New Archetypes
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {ELDEN_RING_DLC_WEAPON_CATEGORIES.map(w => (
+            <div key={w.name} className="glass-card rounded-2xl p-4 border border-white/15 space-y-1.5 hover:border-white/25 transition-all">
+              <div className="flex items-center justify-between">
+                <div className="text-sm font-bold text-white">{w.name}</div>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/10 text-zinc-300 font-semibold">
+                  DLC Tier 2–3
+                </span>
+              </div>
+              <p className="text-xs text-zinc-300 leading-relaxed font-mono">{w.desc}</p>
             </div>
           ))}
         </div>

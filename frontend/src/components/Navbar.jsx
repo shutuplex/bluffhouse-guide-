@@ -8,6 +8,7 @@ const navLinks = [
   { id: 'enemies',     label: 'Encounters' },
   { id: 'combat-sim',  label: 'Combat' },
   { id: 'cards',       label: 'Cards' },
+  { id: 'clans',       label: 'Clans' },
   { id: 'minigames',   label: 'Mini-Games' },
   { id: 'commands',    label: 'Commands' },
 ];

@@ -42,6 +42,7 @@ export default function SearchModal({ isOpen, onClose, onNavigate }) {
   };
 
   const quickLinks = [
+    { label: 'Clans & Covenants', page: 'clans' },
     { label: 'Stat Builder', page: 'rpg' },
     { label: 'Weapon Upgrade Simulator', page: 'weapons' },
     { label: 'Combat System Guide', page: 'combat-sim' },

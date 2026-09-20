@@ -4,12 +4,13 @@ import { BOT_COMMANDS } from '../data/gameData';
 
 const CATEGORIES = [
   { id: 'all',                   label: 'All Commands' },
+  { id: 'Clans & Guilds',        label: 'Clans & Guilds' },
+  { id: 'Referrals & Social',    label: 'Referrals & Social' },
   { id: 'Character Progression', label: 'Character & RPG' },
   { id: 'Combat & Raids',        label: 'Combat & Raids' },
+  { id: 'Weapons & Armory',      label: 'Weapons & Armory' },
   { id: 'Gacha & Economy',       label: 'Gacha & Economy' },
   { id: 'Minigames & Duels',     label: 'Minigames & Duels' },
-  { id: 'Weapons & Armory',      label: 'Weapons & Armory' },
-  { id: 'Social & Info',         label: 'Social & Info' },
 ];
 
 function CommandRow({ cmd }) {

@@ -107,41 +107,97 @@ export default function CardDexPage() {
         </div>
       </section>
 
-      {/* Legendary Talismans */}
-      <section className="space-y-3 sm:space-y-4">
-        <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-          <span className="text-zinc-400 font-mono text-xs sm:text-sm">03.</span> Legendary Talisman Bonuses
-        </h2>
-        <Callout variant="tip" title="Equip Cards as Talismans">
-          Cards with Legendary or Mythic grade can be equipped into Talisman Pouches (unlocked at Level 1, 25, and 50). They provide passive stats that apply to all combat rolls.
+      {/* Talismans & Abilities */}
+      <section className="space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div>
+            <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+              <span className="text-zinc-400 font-mono text-xs sm:text-sm">03.</span> Talismans & Mythic Abilities
+            </h2>
+            <p className="text-xs text-zinc-300 font-mono mt-0.5">
+              Pouch stat allocations, 1-Mythic limit rules, and unique in-combat passives.
+            </p>
+          </div>
+          <span className="px-2.5 py-1 rounded-md bg-purple-500/15 border border-purple-500/30 text-purple-200 font-mono text-xs font-semibold self-start sm:self-auto">
+            1-Mythic Limit Active
+          </span>
+        </div>
+
+        <Callout variant="tip" title="1 Mythic Talisman Limit Rule">
+          Players can only have <strong>1 active Mythic Talisman</strong> equipped at a time. Equipping a second Mythic automatically swaps the existing one in-place while keeping your Legendary and Summer Edition cards completely intact in your remaining slots.
         </Callout>
 
         <div className="glass-card rounded-2xl overflow-hidden border border-white/15">
           <div className="overflow-x-auto">
-            <table className="w-full text-xs font-mono min-w-[480px]">
+            <table className="w-full text-xs font-mono min-w-[500px]">
               <thead>
                 <tr className="border-b border-white/15 bg-white/[0.04]">
                   <th className="text-left px-4 sm:px-5 py-3.5 text-zinc-200 font-semibold uppercase tracking-wider text-[11px]">Rarity Grade</th>
                   <th className="text-left px-4 sm:px-5 py-3.5 text-zinc-200 font-semibold uppercase tracking-wider text-[11px]">Stat Boost</th>
                   <th className="text-left px-4 sm:px-5 py-3.5 text-zinc-200 font-semibold uppercase tracking-wider text-[11px]">Combat Effect</th>
-                  <th className="text-left px-4 sm:px-5 py-3.5 text-zinc-200 font-semibold uppercase tracking-wider text-[11px]">Max Allowed</th>
+                  <th className="text-right px-4 sm:px-5 py-3.5 text-zinc-200 font-semibold uppercase tracking-wider text-[11px]">Max Allowed</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/10">
                 <tr className="hover:bg-white/[0.04] transition-colors">
                   <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-white font-bold">Legendary</td>
-                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-white font-bold font-mono">+5 Any Attribute</td>
+                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-amber-300 font-bold font-mono">+5 Any Attribute</td>
                   <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-zinc-300">Boosts STR, DEX, SPD, or DEF scaling directly</td>
-                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-zinc-200">Up to 3 slots</td>
+                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-right text-zinc-200">Up to 3-4 slots</td>
                 </tr>
                 <tr className="hover:bg-white/[0.04] transition-colors">
-                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-white font-bold">Mythic</td>
-                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-white font-bold font-mono">+50 Hit Points</td>
-                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-zinc-300">Permanently extends maximum character health pool</td>
-                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-zinc-200">Up to 3 slots</td>
+                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-white font-bold">Summer Edition</td>
+                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-amber-200 font-bold font-mono">+5 Any Attribute</td>
+                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-zinc-300">Special seasonal variant with combat scaling</td>
+                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-right text-zinc-200">Up to 3-4 slots</td>
+                </tr>
+                <tr className="hover:bg-white/[0.04] transition-colors">
+                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-purple-200 font-bold">Mythic</td>
+                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-purple-300 font-bold font-mono">+50 Hit Points</td>
+                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-zinc-200 font-medium">Expands max health pool + grants exclusive passive</td>
+                  <td className="px-4 sm:px-5 py-3.5 sm:py-4 text-right text-purple-300 font-bold">1 Active Max</td>
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+
+        {/* Mythic Unique Passives */}
+        <div className="glass-card rounded-2xl p-5 border border-purple-500/30 bg-purple-500/[0.04] space-y-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Sparkles className="w-4 h-4 text-purple-300" />
+              <h3 className="font-bold text-white text-sm">Mythic Passives & Universal Inline Ability Badges</h3>
+            </div>
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-500/20 text-purple-200 border border-purple-500/40 font-semibold">
+              Inline Badges
+            </span>
+          </div>
+
+          <p className="text-xs text-zinc-300 leading-relaxed font-mono">
+            Mythic abilities are labeled with universal inline badges visible across <strong className="text-white">/collection</strong>, <strong className="text-white">/shop</strong>, <strong className="text-white">/talismans</strong>, <strong className="text-white">@bot</strong> inline query search, and <strong className="text-white">/rdm</strong>.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+            <div className="glass-badge rounded-xl p-4 border-purple-500/30 space-y-2 bg-black/50">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-mono font-bold text-purple-300">✦ Lord of Blood's Exultation</span>
+                <span className="text-[10px] font-mono text-zinc-400">Card #289 · Changsu OH</span>
+              </div>
+              <p className="text-xs text-zinc-200 leading-relaxed">
+                Landing a Blood Loss hit triggers <strong>+20% ATK damage</strong> on your next 3 strikes (Active in PvP, PvE Hunts, and World Boss Raids).
+              </p>
+            </div>
+
+            <div className="glass-badge rounded-xl p-4 border-purple-500/30 space-y-2 bg-black/50">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-mono font-bold text-purple-300">✦ Vampiric Rot</span>
+                <span className="text-[10px] font-mono text-zinc-400">Card #189 · Bunny Iglesias</span>
+              </div>
+              <p className="text-xs text-zinc-200 leading-relaxed">
+                <strong>100% of Scarlet Rot DoT ticks</strong> heal your character directly instead of draining HP (Active in PvP, PvE Hunts, and World Boss Raids).
+              </p>
+            </div>
           </div>
         </div>
       </section>

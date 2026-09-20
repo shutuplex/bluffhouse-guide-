@@ -198,10 +198,47 @@ export default function CombatSimulatorPage() {
         </div>
       </section>
 
+      {/* Wild Challenger 1v1 Encounters */}
+      <section className="space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <h2 className="text-xl font-bold text-white flex items-center gap-2">
+            <span className="text-zinc-400 font-mono text-sm">05.</span> Wild Challenger 1v1 Encounters
+          </h2>
+          <span className="px-2.5 py-1 rounded-md bg-purple-500/15 border border-purple-500/30 text-purple-200 font-mono text-xs font-semibold self-start sm:self-auto">
+            100 Group Messages
+          </span>
+        </div>
+
+        <Callout variant="tip" title="Group Roaming Challenges">
+          Every 100 messages sent in active chat groups, a wild roaming anime challenger spawns. The <strong>first warrior to tap [Accept Challenge]</strong> claims the encounter. Combat uses tactical turn-based actions: Strike, Heavy Strike (2-turn CD), Guard, and Dodge.
+        </Callout>
+
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {[
+            { tier: 'Common', hp: '800 HP', atk: '35 ATK', shards: '35 ◈', drop: '75% Drop' },
+            { tier: 'Rare', hp: '1,400 HP', atk: '60 ATK', shards: '65 ◈', drop: '50% Drop' },
+            { tier: 'Medium', hp: '2,200 HP', atk: '95 ATK', shards: '100 ◈', drop: '35% Drop' },
+            { tier: 'Legendary', hp: '3,500 HP', atk: '140 ATK', shards: '200 ◈', drop: '20% Drop' },
+          ].map(c => (
+            <div key={c.tier} className="glass-card rounded-2xl p-4 border border-white/15 space-y-1">
+              <div className="text-xs font-mono font-bold text-white">{c.tier}</div>
+              <div className="text-sm font-black font-mono text-rose-300">{c.hp}</div>
+              <div className="text-xs text-zinc-300 font-mono">{c.atk} · {c.shards}</div>
+              <div className="text-[11px] font-mono text-emerald-300 font-semibold pt-1">{c.drop}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="glass-badge rounded-xl p-3.5 border-white/10 text-xs font-mono text-zinc-300 flex items-center justify-between">
+          <span>Duplicate Protection:</span>
+          <strong className="text-white">+50 Bonus Shards awarded if card already owned</strong>
+        </div>
+      </section>
+
       {/* Damage Formula Pipeline */}
       <section className="space-y-4">
         <h2 className="text-xl font-bold text-white flex items-center gap-2">
-          <span className="text-zinc-400 font-mono text-sm">05.</span> Damage Pipeline Formula
+          <span className="text-zinc-400 font-mono text-sm">06.</span> Damage Pipeline Formula
         </h2>
         <div className="code-block p-6 rounded-2xl border border-white/15 space-y-2.5">
           <div className="text-xs font-mono text-zinc-400 uppercase tracking-wider mb-3 font-semibold">// Full mathematical damage calculation</div>

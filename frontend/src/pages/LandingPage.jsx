@@ -9,6 +9,7 @@ import CardDetailModal from '../components/ui/CardDetailModal';
 import CopyButton from '../components/CopyButton';
 
 const FEATURE_CARDS = [
+  { id: 'clans',      title: 'Clans & Covenants',              badge: 'Guilds',      desc: 'Form clans for 500 Shards, unlock guild-wide passive perks (Lv 1–10), and coordinate 3 daily strikes against weekly Titan bosses.', icon: Shield },
   { id: 'rpg',        title: 'Site of Grace & Stat Builder',   badge: 'Character',   desc: 'Simulate Level 1–100 stat allocations, calculate crit %, damage mitigation, and Talisman Pouch synergies live.',     icon: Zap },
   { id: 'weapons',    title: 'Smithy & Weapon Upgrades',       badge: 'Weapons',     desc: 'Browse Tier 1–3 weapon stats, calculate +0→+10 shard costs, and preview real-time scaling modifiers.',                icon: Sword },
   { id: 'enemies',    title: 'Spawn Rates & Drop Tables',      badge: 'PvE Spawns',  desc: 'Encounter spawn probabilities across common, elite, and boss tiers with full reward and shard tables.',               icon: Skull },
@@ -63,6 +64,12 @@ export default function LandingPage({ onNavigate }) {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl sm:rounded-2xl glass-btn-primary text-xs sm:text-sm font-mono transition-all cursor-pointer active:scale-95"
             >
               <Sparkles className="w-4 h-4 text-white" /> View Characters ({CHARACTERS_DATA.length})
+            </button>
+            <button
+              onClick={() => onNavigate('clans')}
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl sm:rounded-2xl glass-btn text-xs sm:text-sm font-mono transition-all cursor-pointer active:scale-95"
+            >
+              <Shield className="w-4 h-4 text-zinc-300" /> Clans & Guilds
             </button>
             <button
               onClick={() => onNavigate('weapons')}

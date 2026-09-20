@@ -80,6 +80,18 @@ const NAV_SECTIONS = [
     ]
   },
   {
+    id: 'clans',
+    label: 'Clans & Covenants',
+    page: 'clans',
+    items: [
+      { label: 'Clan Leveling (Lv 1–10)', page: 'clans', highlight: true },
+      { label: 'Creation & Tag Rules', page: 'clans' },
+      { label: 'Approval & DM Workflow', page: 'clans' },
+      { label: 'Clan Roles & Hierarchy', page: 'clans' },
+      { label: 'Weekly Titan Boss', page: 'clans' },
+    ]
+  },
+  {
     id: 'commands',
     label: 'Commands Reference',
     page: 'commands',
