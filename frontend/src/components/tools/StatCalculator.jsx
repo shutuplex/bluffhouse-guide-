@@ -13,7 +13,12 @@ const STAT_META = {
 };
 
 const LEGENDARY_CARDS = ANIME_CARDS_DATABASE
-  ? ANIME_CARDS_DATABASE.filter(c => c.rarity === 'Legendary' || c.rarity === 'Mythic').slice(0, 15)
+  ? ANIME_CARDS_DATABASE.filter(c => c.rarity === 'Legendary' || c.rarity === 'Mythic')
+      .slice(0, 20)
+      .map(c => ({
+        ...c,
+        characterId: String(c.id || c.characterId || c._id),
+      }))
   : [];
 
 function getTitle(level) {
@@ -50,9 +55,13 @@ export default function StatCalculator() {
     const bonuses = { HP: 0, STR: 0, DEX: 0, SPD: 0, DEF: 0 };
     equippedTalismans.forEach(cardId => {
       const card = LEGENDARY_CARDS.find(c => c.characterId === cardId);
-      if (card?.stat) {
-        if (card.stat.type === 'HP') bonuses.HP += card.stat.value;
-        else if (bonuses[card.stat.type] !== undefined) bonuses[card.stat.type] += card.stat.value;
+      if (card) {
+        if (card.rarity === 'Mythic') {
+          bonuses.HP += 50;
+        } else if (card.stat) {
+          if (card.stat.type === 'HP') bonuses.HP += card.stat.value;
+          else if (bonuses[card.stat.type] !== undefined) bonuses[card.stat.type] += card.stat.value;
+        }
       }
     });
     return bonuses;
@@ -77,8 +86,20 @@ export default function StatCalculator() {
   const toggleTalisman = (cardId) => {
     setEquippedTalismans(prev => {
       if (prev.includes(cardId)) return prev.filter(id => id !== cardId);
-      if (prev.length >= slots) return prev;
-      return [...prev, cardId];
+      const targetCard = LEGENDARY_CARDS.find(c => c.characterId === cardId);
+      let next = [...prev];
+      // 1-Mythic limit rule: If target is Mythic and another Mythic is already equipped, swap it in place
+      if (targetCard?.rarity === 'Mythic') {
+        const existingMythicId = next.find(id => {
+          const c = LEGENDARY_CARDS.find(card => card.characterId === id);
+          return c?.rarity === 'Mythic';
+        });
+        if (existingMythicId) {
+          next = next.filter(id => id !== existingMythicId);
+        }
+      }
+      if (next.length >= slots) return next;
+      return [...next, cardId];
     });
   };
 
@@ -212,11 +233,16 @@ export default function StatCalculator() {
               >
                 <div className="text-xs font-bold text-white truncate">{card.name}</div>
                 <div className="text-[10px] text-zinc-400 truncate mt-0.5">{card.anime}</div>
-                {card.stat && (
+                {card.rarity === 'Mythic' ? (
+                  <div className="mt-2 text-[11px] font-mono text-purple-300 font-semibold flex items-center justify-between">
+                    <span>+50 HP</span>
+                    <span className="text-[9px] uppercase px-1.5 py-0.5 rounded bg-purple-500/20 text-purple-200 border border-purple-500/30">Mythic</span>
+                  </div>
+                ) : card.stat ? (
                   <div className="mt-2 text-[11px] font-mono text-zinc-200 font-semibold">
                     +{card.stat.value} {card.stat.type}
                   </div>
-                )}
+                ) : null}
               </button>
             );
           })}

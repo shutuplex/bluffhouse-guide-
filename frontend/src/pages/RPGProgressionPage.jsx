@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { FlameKindling, RotateCcw, Shield, Award, Sparkles, Gift, Users } from 'lucide-react';
 import CopyButton from '../components/CopyButton';
 import { STAT_INFO, TITLES_PROGRESSION } from '../data/gameData';
