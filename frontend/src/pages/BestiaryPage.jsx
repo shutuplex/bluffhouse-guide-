@@ -29,8 +29,8 @@ export default function BestiaryPage() {
         <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
           <span className="text-zinc-400 font-mono text-xs sm:text-sm">02.</span> Encounter Spawn Rates — <CommandBadge cmd="/hunt" />
         </h2>
-        <Callout variant="note" title="Encounter System">
-          Trigger encounters with <span className="text-white font-mono font-medium">/hunt</span> or <span className="text-white font-mono font-medium">/explore</span>. Spawns are dynamically determined by weighted tier probabilities.
+        <Callout variant="note" title="Encounter System & Level Requirements">
+          Trigger encounters with <span className="text-white font-mono font-medium">/hunt</span> (requires Level 10+ Foul Tarnished) or <span className="text-white font-mono font-medium">/explore</span> (available from Level 1). Spawns are dynamically determined by weighted tier probabilities.
         </Callout>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-1 sm:pt-2">
@@ -157,7 +157,7 @@ export default function BestiaryPage() {
               </thead>
               <tbody className="divide-y divide-white/10">
                 {[
-                  { tier: 'Common',    hp: '800 HP',   atk: '35 ATK',  shards: '35 ◈',  drop: '75% Drop', dup: '+50 ◈ if owned' },
+                  { tier: 'Classic',   hp: '800 HP',   atk: '35 ATK',  shards: '35 ◈',  drop: '75% Drop', dup: '+50 ◈ if owned' },
                   { tier: 'Rare',      hp: '1,400 HP', atk: '60 ATK',  shards: '65 ◈',  drop: '50% Drop', dup: '+50 ◈ if owned' },
                   { tier: 'Medium',    hp: '2,200 HP', atk: '95 ATK',  shards: '100 ◈', drop: '35% Drop', dup: '+50 ◈ if owned' },
                   { tier: 'Legendary', hp: '3,500 HP', atk: '140 ATK', shards: '200 ◈', drop: '20% Drop', dup: '+50 ◈ if owned' },

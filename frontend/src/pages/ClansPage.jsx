@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Shield, Crown, Star, Users, Swords, Award, TrendingUp, Coins, Copy, Check, MessageSquare, ChevronRight, UserPlus, Flame } from 'lucide-react';
-import { CLAN_LEVELS, CLAN_ROLES } from '../data/gameData';
+import { Shield, Crown, Star, Users, Swords, Award, TrendingUp, Coins, Copy, Check, MessageSquare, ChevronRight, UserPlus, Flame, Calendar, Trophy, Ticket, Sparkles } from 'lucide-react';
+import { CLAN_LEVELS, CLAN_ROLES, CLAN_GLORY_SYSTEM } from '../data/gameData';
 import Callout from '../components/ui/Callout';
 import CommandBadge, { InlineCode } from '../components/ui/CommandBadge';
 import CopyButton from '../components/CopyButton';
@@ -68,6 +68,7 @@ export default function ClansPage() {
       <div className="flex flex-wrap gap-2 p-1.5 glass-card rounded-2xl border border-white/10 text-xs font-mono">
         {[
           { id: 'progression', label: 'Leveling & Perks (Lv 1-10)' },
+          { id: 'glory', label: 'Glory Points (GP) & Settlements' },
           { id: 'workflow', label: 'Creation & Approval Workflow' },
           { id: 'roles', label: 'Hierarchy & Governance' },
           { id: 'titan', label: 'Weekly Titan Boss' },
@@ -189,6 +190,157 @@ export default function ClansPage() {
                   ))}
                 </tbody>
               </table>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* TAB: Glory Points (GP) & Weekly Sunday Settlement */}
+      {activeTab === 'glory' && (
+        <div className="space-y-6 animate-float-up">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <h2 className="text-xl font-bold text-white flex items-center gap-2">
+                <Trophy className="w-5 h-5 text-amber-400" /> Clan Glory Points (GP) & Weekly Settlement
+              </h2>
+              <p className="text-xs text-zinc-300 font-mono mt-1">
+                Compete on the weekly guild rankings, earn Arena Vouchers, and collect Sunday dividend payouts.
+              </p>
+            </div>
+            <div className="text-xs font-mono text-zinc-300 glass-badge px-3 py-1.5 rounded-xl border border-white/15">
+              Reset: <strong className="text-white">Every Sunday 00:00 UTC</strong>
+            </div>
+          </div>
+
+          <Callout variant="tip" title="Automated Telegram DM Payouts & 25 GP Eligibility Threshold">
+            Rewards are automatically delivered to eligible clan members via Telegram DM every Sunday at 00:00 UTC. To prevent inactive leeching, members must contribute a <strong>minimum of 25 GP</strong> during the active week to receive tier rewards.
+          </Callout>
+
+          {/* Quick Metrics Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="glass-card rounded-2xl p-5 border border-white/15 space-y-2">
+              <div className="flex items-center gap-2">
+                <Calendar className="w-4 h-4 text-sky-400" />
+                <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider font-semibold">Weekly Settlement</span>
+              </div>
+              <div className="text-lg font-bold text-white font-mono">Sunday @ 00:00 UTC</div>
+              <p className="text-xs text-zinc-300 leading-relaxed">
+                Calculates global clan ranking positions and automatically settles Treasury funds, Shards, and Arena Vouchers.
+              </p>
+            </div>
+
+            <div className="glass-card rounded-2xl p-5 border border-white/15 space-y-2">
+              <div className="flex items-center gap-2">
+                <Shield className="w-4 h-4 text-emerald-400" />
+                <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider font-semibold">Minimum Threshold</span>
+              </div>
+              <div className="text-lg font-bold text-white font-mono">25 GP Active Minimum</div>
+              <p className="text-xs text-zinc-300 leading-relaxed">
+                Members must individually contribute at least 25 GP during the cycle. Rank 11+ clans require 50 GP minimum.
+              </p>
+            </div>
+
+            <div className="glass-card rounded-2xl p-5 border border-white/15 space-y-2">
+              <div className="flex items-center gap-2">
+                <Crown className="w-4 h-4 text-amber-400" />
+                <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider font-semibold">Clan MVP Bonus</span>
+              </div>
+              <div className="text-lg font-bold text-amber-300 font-mono">+2 Vouchers & +100 ◈</div>
+              <p className="text-xs text-zinc-300 leading-relaxed">
+                Awarded to the single highest GP contributor in each eligible clan on top of their weekly tier dividends.
+              </p>
+            </div>
+          </div>
+
+          {/* Weekly Clan Tier Rewards Table */}
+          <div className="glass-card rounded-2xl overflow-hidden border border-white/15 space-y-4 p-5 sm:p-6">
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="text-xs font-mono uppercase tracking-wider text-zinc-300 font-semibold">Weekly Clan Tier Rewards</div>
+                <p className="text-xs text-zinc-400 mt-0.5">Distributed to all eligible members meeting contribution criteria</p>
+              </div>
+              <span className="text-xs font-mono px-2.5 py-1 rounded-lg bg-white/10 text-white border border-white/15">
+                4 Placement Tiers
+              </span>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs font-mono min-w-[540px]">
+                <thead>
+                  <tr className="border-b border-white/15 bg-white/[0.04]">
+                    <th className="text-left px-5 py-3.5 text-zinc-200 font-semibold uppercase tracking-wider text-[11px]">Rank Tier</th>
+                    <th className="text-left px-5 py-3.5 text-zinc-200 font-semibold uppercase tracking-wider text-[11px]">Member Vouchers</th>
+                    <th className="text-left px-5 py-3.5 text-zinc-200 font-semibold uppercase tracking-wider text-[11px]">Member Shards</th>
+                    <th className="text-left px-5 py-3.5 text-zinc-200 font-semibold uppercase tracking-wider text-[11px]">Clan Treasury</th>
+                    <th className="text-right px-5 py-3.5 text-zinc-200 font-semibold uppercase tracking-wider text-[11px]">Eligibility</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/10">
+                  {CLAN_GLORY_SYSTEM.rankRewards.map(tier => (
+                    <tr key={tier.rank} className="hover:bg-white/[0.04] transition-colors">
+                      <td className="px-5 py-4 font-bold text-white flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-amber-400" />
+                        <div>
+                          <div>{tier.rank}</div>
+                          <div className="text-[10px] text-zinc-400 font-normal">{tier.tierDesc}</div>
+                        </div>
+                      </td>
+                      <td className="px-5 py-4 text-emerald-300 font-bold">
+                        +{tier.vouchers} Arena Vouchers
+                      </td>
+                      <td className="px-5 py-4 text-amber-300 font-semibold">
+                        +{tier.shards.toLocaleString()} Shards
+                      </td>
+                      <td className="px-5 py-4 text-zinc-200">
+                        {tier.treasury > 0 ? `+${tier.treasury} Shards` : '—'}
+                      </td>
+                      <td className="px-5 py-4 text-right text-zinc-300 font-semibold">
+                        Min. {tier.minGP} GP
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Clan MVP Award Card */}
+          <div className="glass-card rounded-2xl p-5 border border-amber-500/30 bg-amber-500/[0.04] space-y-3">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Crown className="w-5 h-5 text-amber-400" />
+                <h3 className="font-bold text-white text-sm">Clan MVP Recognition Award</h3>
+              </div>
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-200 border border-amber-500/40 font-semibold">
+                Per Clan Winner
+              </span>
+            </div>
+            <p className="text-xs text-zinc-200 leading-relaxed">
+              Every Sunday settlement, the bot tallies all individual GP contributions within each eligible clan. The member who delivered the highest GP output is crowned the <strong>Clan MVP</strong>, receiving an additional <strong>+2 Arena Vouchers</strong> and <strong>+100 Shards</strong> directly in their Telegram DM payout notification.
+            </p>
+          </div>
+
+          {/* How to Earn GP */}
+          <div className="glass-card rounded-2xl p-5 border border-white/15 space-y-3">
+            <div className="text-xs font-mono text-zinc-300 uppercase tracking-wider font-semibold">How Glory Points (GP) Are Generated</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/10 space-y-1">
+                <div className="font-bold text-white flex items-center gap-2">
+                  <Swords className="w-4 h-4 text-white" /> World Boss Raids
+                </div>
+                <p className="text-zinc-300 leading-relaxed">
+                  Engage in server-wide major boss encounters (/boss). Total raid strike damage contributes directly to your personal GP output and overall clan standing.
+                </p>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/10 space-y-1">
+                <div className="font-bold text-white flex items-center gap-2">
+                  <Flame className="w-4 h-4 text-white" /> Ancient Clan Titan Raids
+                </div>
+                <p className="text-zinc-300 leading-relaxed">
+                  Execute your 3 daily attacks against the weekly Titan Boss (/clan boss). Titan combat rewards personal XP, Shards, Treasury funds, and Glory Points.
+                </p>
+              </div>
             </div>
           </div>
         </div>

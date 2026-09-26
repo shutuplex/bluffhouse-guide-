@@ -59,8 +59,8 @@ export default function CombatSimulatorPage() {
         <h2 className="text-xl font-bold text-white flex items-center gap-2">
           <span className="text-zinc-400 font-mono text-sm">01.</span> PvE Hunting — <CommandBadge cmd="/hunt" />
         </h2>
-        <Callout variant="note" title="Encounter Flow">
-          Use <InlineCode>/hunt</InlineCode> or <InlineCode>/explore</InlineCode> to trigger an encounter. Inspect the monster's stats and engage with the interactive combat buttons.
+        <Callout variant="note" title="Encounter Flow & Level Requirements">
+          Use <InlineCode>/hunt</InlineCode> (requires Level 10+ Foul Tarnished) or <InlineCode>/explore</InlineCode> (available from Level 1) to trigger an encounter. Inspect the monster's stats and engage with the interactive combat buttons.
         </Callout>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
@@ -215,7 +215,7 @@ export default function CombatSimulatorPage() {
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {[
-            { tier: 'Common', hp: '800 HP', atk: '35 ATK', shards: '35 ◈', drop: '75% Drop' },
+            { tier: 'Classic', hp: '800 HP', atk: '35 ATK', shards: '35 ◈', drop: '75% Drop' },
             { tier: 'Rare', hp: '1,400 HP', atk: '60 ATK', shards: '65 ◈', drop: '50% Drop' },
             { tier: 'Medium', hp: '2,200 HP', atk: '95 ATK', shards: '100 ◈', drop: '35% Drop' },
             { tier: 'Legendary', hp: '3,500 HP', atk: '140 ATK', shards: '200 ◈', drop: '20% Drop' },

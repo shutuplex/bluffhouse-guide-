@@ -42,11 +42,15 @@ function getTalismanSlots(level) {
 
 export default function StatCalculator() {
   const [level, setLevel] = useState(35);
-  const [stats, setStats] = useState({ HP: 7, STR: 10, DEX: 8, SPD: 5, DEF: 5 });
+  const [includeReferralBonus, setIncludeReferralBonus] = useState(true);
+  const [includeClanBonus, setIncludeClanBonus] = useState(true);
+  const [stats, setStats] = useState({ HP: 10, STR: 15, DEX: 10, SPD: 5, DEF: 5 });
   const [equippedTalismans, setEquippedTalismans] = useState([]);
 
   const slots = getTalismanSlots(level);
-  const availablePoints = level;
+  const basePoints = Math.max(0, level - 1);
+  const bonusPoints = (includeReferralBonus ? 5 : 0) + (includeClanBonus ? 6 : 0);
+  const availablePoints = basePoints + bonusPoints;
   const usedPoints = Object.values(stats).reduce((a, b) => a + b, 0);
   const freePoints = availablePoints - usedPoints;
 
@@ -148,6 +152,52 @@ export default function StatCalculator() {
             {freePoints > 0 ? `${freePoints} unallocated point${freePoints > 1 ? 's' : ''}` : 'Points fully invested'}
           </span>
           <span>Level 100</span>
+        </div>
+
+        {/* Bonus Point Toggles */}
+        <div className="pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2.5 text-xs font-mono">
+          <div className="flex items-center gap-2">
+            <span className="text-zinc-400 text-[11px] uppercase tracking-wider font-semibold">Bonus Point Sources:</span>
+            <button
+              onClick={() => {
+                setIncludeReferralBonus(prev => {
+                  const nextVal = !prev;
+                  const newBonus = (nextVal ? 5 : 0) + (includeClanBonus ? 6 : 0);
+                  const newTotalAvail = basePoints + newBonus;
+                  if (usedPoints > newTotalAvail) setStats({ HP: 0, STR: 0, DEX: 0, SPD: 0, DEF: 0 });
+                  return nextVal;
+                });
+              }}
+              className={`px-2.5 py-1 rounded-lg border text-xs transition-all cursor-pointer ${
+                includeReferralBonus
+                  ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40 font-bold'
+                  : 'bg-white/[0.04] text-zinc-400 border-white/10 hover:text-white'
+              }`}
+            >
+              +5 /ref Milestone
+            </button>
+            <button
+              onClick={() => {
+                setIncludeClanBonus(prev => {
+                  const nextVal = !prev;
+                  const newBonus = (includeReferralBonus ? 5 : 0) + (nextVal ? 6 : 0);
+                  const newTotalAvail = basePoints + newBonus;
+                  if (usedPoints > newTotalAvail) setStats({ HP: 0, STR: 0, DEX: 0, SPD: 0, DEF: 0 });
+                  return nextVal;
+                });
+              }}
+              className={`px-2.5 py-1 rounded-lg border text-xs transition-all cursor-pointer ${
+                includeClanBonus
+                  ? 'bg-sky-500/20 text-sky-300 border-sky-500/40 font-bold'
+                  : 'bg-white/[0.04] text-zinc-400 border-white/10 hover:text-white'
+              }`}
+            >
+              +6 /clan Perks
+            </button>
+          </div>
+          <div className="text-zinc-300">
+            Pool: <strong className="text-white font-bold">{availablePoints}</strong> / 110 Cap
+          </div>
         </div>
       </div>
 

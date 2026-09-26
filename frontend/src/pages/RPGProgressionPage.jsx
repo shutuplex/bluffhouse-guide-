@@ -32,7 +32,7 @@ export default function RPGProgressionPage() {
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">Site of Grace & Character Stats</h1>
         <p className="text-zinc-300 mt-2 text-base max-w-2xl leading-relaxed">
-          Level your Tarnished from 1 to 100. Allocate attribute points across 5 core combat stats, unlock Talisman Pouches, and earn prestigious progression titles.
+          Level your Tarnished from 1 to 100. Allocate up to 110 attribute points across 5 core combat stats (99 base + 5 referral + 6 clan perks), unlock Talisman Pouches, and earn prestigious progression titles.
         </p>
       </div>
 
@@ -44,6 +44,54 @@ export default function RPGProgressionPage() {
         <Callout variant="note" title="Site of Grace Progression">
           Spend XP and Shards at the Site of Grace to level up. Each level-up grants <strong className="text-white">+1 Attribute Point</strong> to freely invest into any combat stat.
         </Callout>
+
+        {/* Stat Points Expansion Banner */}
+        <div className="glass-card rounded-2xl p-6 border border-white/15 space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <div className="flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-amber-400" />
+                <h3 className="text-base font-bold text-white">Maximum Stat Points Expansion (Cap: 110)</h3>
+              </div>
+              <p className="text-xs text-zinc-300 mt-1">
+                The total stat point pool has been expanded from 99 to 110 points across base level-ups and permanent social progression perks.
+              </p>
+            </div>
+            <span className="glass-badge px-3.5 py-1.5 rounded-xl border border-white/15 text-xs font-mono font-bold text-amber-300 self-start sm:self-auto">
+              110 Total Max Points
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 text-xs font-mono">
+            <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/10 space-y-1">
+              <div className="text-zinc-400 text-[10px] uppercase tracking-wider">Base Tarnished Level-ups</div>
+              <div className="text-white font-bold text-base">99 Points</div>
+              <p className="text-zinc-300 text-[11px]">Level 100 Tarnished (Level - 1 formula)</p>
+            </div>
+
+            <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/10 space-y-1">
+              <div className="text-zinc-400 text-[10px] uppercase tracking-wider">Referral Milestones</div>
+              <div className="text-emerald-300 font-bold text-base">+5 Bonus Points</div>
+              <p className="text-zinc-300 text-[11px]">Unlocked at Milestone 5 in <InlineCode>/ref</InlineCode></p>
+            </div>
+
+            <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/10 space-y-1">
+              <div className="text-zinc-400 text-[10px] uppercase tracking-wider">Clan Level Perks</div>
+              <div className="text-sky-300 font-bold text-base">+6 Bonus Points</div>
+              <p className="text-zinc-300 text-[11px]">Unlocked across Clan Lv 3, 5, 7, 9, 10 in <InlineCode>/clan</InlineCode></p>
+            </div>
+          </div>
+
+          <div className="pt-2 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+            <p className="text-zinc-300 text-xs leading-relaxed">
+              <strong className="text-white">Permanent Preservation Guarantee:</strong> All bonus points (+11 total) are permanently preserved across Rebirth (<InlineCode>/rebirth</InlineCode> / <InlineCode>/respec</InlineCode>), direct allocation (<InlineCode>/setstats</InlineCode>), and Stat Presets (<InlineCode>/presets</InlineCode>).
+            </p>
+            <div className="flex items-center gap-2 flex-shrink-0">
+              <CommandBadge cmd="/setstats" />
+              <CommandBadge cmd="/presets" />
+            </div>
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
           {[
@@ -326,7 +374,7 @@ export default function RPGProgressionPage() {
             </p>
             <div className="glass-badge rounded-xl p-3 border-white/10 text-xs font-mono text-white space-y-1">
               <div>+100 Shards Currency Bonus</div>
-              <div className="text-zinc-300">+ 1 Common Character Card (+50 Shards if already owned)</div>
+              <div className="text-zinc-300">+ 1 Classic Character Card (+50 Shards if already owned)</div>
             </div>
           </div>
         </div>

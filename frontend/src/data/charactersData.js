@@ -11,8 +11,10 @@ export const CHARACTERS_DATA = rawCharacters.map(c => {
   const name = (c.name || 'Unknown').trim();
   const img_url = typeof c.img_url === 'string' ? c.img_url.trim() : c.img_url;
   const isVideo = isVideoUrl(img_url);
+  const rarity = c.rarity === 'Common' ? 'Classic' : c.rarity;
   return {
     ...c,
+    rarity,
     name,
     anime,
     img_url,
@@ -27,7 +29,7 @@ export const CHARACTER_RARITIES = [
   'Legendary',
   'Rare',
   'Medium',
-  'Common'
+  'Classic'
 ];
 
 export const CHARACTER_ANIMES = [

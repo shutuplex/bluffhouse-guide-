@@ -30,6 +30,11 @@ const RARITY_STYLES = {
     stars: 3,
     border: 'border-indigo-500/20 hover:border-indigo-400/35'
   },
+  'Classic': {
+    badge: 'border-zinc-500/30 text-zinc-300 bg-zinc-500/10',
+    stars: 1,
+    border: 'border-zinc-500/20 hover:border-zinc-400/35'
+  },
   'Common': {
     badge: 'border-zinc-500/30 text-zinc-300 bg-zinc-500/10',
     stars: 1,
@@ -266,7 +271,7 @@ export default function CharactersShowcase() {
         <>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
             {paginatedCharacters.map(char => {
-              const rarityStyle = RARITY_STYLES[char.rarity] || RARITY_STYLES['Common'];
+              const rarityStyle = RARITY_STYLES[char.rarity] || RARITY_STYLES['Classic'] || RARITY_STYLES['Common'];
               const statMeta = char.stat ? STAT_CONFIG[char.stat.type] : null;
 
               return (

@@ -1,17 +1,22 @@
-import { Sparkles, Star } from 'lucide-react';
+import { Sparkles, Star, Dices, RefreshCw, ShieldAlert, Ticket } from 'lucide-react';
 import Callout from '../components/ui/Callout';
 import CharactersShowcase from '../components/CharactersShowcase';
+import CommandBadge, { InlineCode } from '../components/ui/CommandBadge';
+import CopyButton from '../components/CopyButton';
+import { WHEEL_OF_FORTUNE, MELTING_STATION } from '../data/gameData';
 
 const RARITY_META = {
+  Classic:   { stars: 1, color: 'text-zinc-300' },
   Common:    { stars: 1, color: 'text-zinc-300' },
   Rare:      { stars: 2, color: 'text-zinc-200' },
+  Medium:    { stars: 3, color: 'text-indigo-300' },
   Epic:      { stars: 3, color: 'text-white' },
-  Legendary: { stars: 4, color: 'text-white' },
-  Mythic:    { stars: 5, color: 'text-white' },
+  Legendary: { stars: 4, color: 'text-amber-300' },
+  Mythic:    { stars: 5, color: 'text-purple-300' },
 };
 
 const GACHA_RATES = [
-  { rarity: 'Common',    rate: '55.0%', desc: 'Foundational cards for collection and synthesis' },
+  { rarity: 'Classic',   rate: '55.0%', desc: 'Foundational cards for collection and synthesis' },
   { rarity: 'Rare',      rate: '25.0%', desc: 'Higher stat values and enhanced collector ratings' },
   { rarity: 'Epic',      rate: '13.0%', desc: 'Elite anime characters with potent team value' },
   { rarity: 'Legendary', rate: '6.0%',  desc: 'Grants +5 Attribute Bonus when slotted as Talisman' },
@@ -91,14 +96,14 @@ export default function CardDexPage() {
         <div className="glass-card rounded-2xl p-4 sm:p-5 border border-white/10 space-y-2.5 sm:space-y-3">
           <div className="text-xs font-mono uppercase tracking-wider text-zinc-300">Rate Distribution Visual</div>
           <div className="flex h-3 sm:h-3.5 rounded-full overflow-hidden gap-1 p-0.5 bg-black/40 border border-white/10">
-            <div className="bg-zinc-600 rounded-l-full" style={{ width: '55%' }} title="Common 55%" />
+            <div className="bg-zinc-600 rounded-l-full" style={{ width: '55%' }} title="Classic 55%" />
             <div className="bg-zinc-400" style={{ width: '25%' }} title="Rare 25%" />
             <div className="bg-zinc-200" style={{ width: '13%' }} title="Epic 13%" />
             <div className="bg-amber-400" style={{ width: '6%' }} title="Legendary 6%" />
             <div className="bg-white rounded-r-full" style={{ width: '1%' }} title="Mythic 1%" />
           </div>
           <div className="flex flex-wrap justify-between text-xs font-mono text-zinc-300 gap-2">
-            <span>55% Common</span>
+            <span>55% Classic</span>
             <span>25% Rare</span>
             <span>13% Epic</span>
             <span className="text-white font-semibold">6% Leg</span>
@@ -107,12 +112,211 @@ export default function CardDexPage() {
         </div>
       </section>
 
-      {/* Talismans & Abilities */}
-      <section className="space-y-4">
+      {/* 03. Character Wheel of Fortune & Arena Vouchers */}
+      <section className="space-y-4 pt-6 border-t border-white/10">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
           <div>
             <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-              <span className="text-zinc-400 font-mono text-xs sm:text-sm">03.</span> Talismans & Mythic Abilities
+              <span className="text-zinc-400 font-mono text-xs sm:text-sm">03.</span> Character Wheel of Fortune — <CommandBadge cmd="/spin" />
+            </h2>
+            <p className="text-xs text-zinc-300 font-mono mt-0.5">
+              Spend Arena Vouchers to pull guaranteed character cards and progressive duplicate refund shards.
+            </p>
+          </div>
+          <span className="px-2.5 py-1 rounded-md bg-white/10 text-white font-mono text-xs font-semibold self-start sm:self-auto border border-white/15 flex items-center gap-1.5">
+            <Ticket className="w-3.5 h-3.5 text-amber-400" />
+            1–10 Spins / Command
+          </span>
+        </div>
+
+        <Callout variant="note" title="Arena Vouchers Economy & Transparent Pull Rates">
+          The Wheel of Fortune operates exclusively on <strong>Arena Vouchers</strong>. Vouchers are earned through weekly <strong>Sunday Clan Glory settlements</strong> (up to 10 vouchers), recycling duplicate cards at the <strong>Melting Station</strong> (<InlineCode>/melt</InlineCode>), and special redeem codes.
+        </Callout>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          {/* Wheel Drop Rates */}
+          <div className="glass-card rounded-2xl p-5 border border-white/15 space-y-4 flex flex-col justify-between">
+            <div className="space-y-1">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-mono uppercase tracking-wider text-zinc-300 font-semibold">Fixed Wheel Drop Rates</span>
+                <span className="text-[10px] font-mono text-zinc-400">100.0% Normalized</span>
+              </div>
+              <p className="text-xs text-zinc-400">Transparent probabilities applied per individual spin</p>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs font-mono">
+                <thead>
+                  <tr className="border-b border-white/10 bg-white/[0.02]">
+                    <th className="text-left py-2.5 px-3 text-zinc-300 font-semibold">Rarity</th>
+                    <th className="text-center py-2.5 px-3 text-zinc-300 font-semibold">Probability</th>
+                    <th className="text-right py-2.5 px-3 text-zinc-300 font-semibold">Star Grade</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/10">
+                  {WHEEL_OF_FORTUNE.rates.map(tier => (
+                    <tr key={tier.rarity} className="hover:bg-white/[0.03]">
+                      <td className="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+                        <span className={`w-2 h-2 rounded-full ${
+                          tier.rarity === 'Mythic' ? 'bg-purple-400' :
+                          tier.rarity === 'Legendary' ? 'bg-amber-400' :
+                          tier.rarity === 'Rare' ? 'bg-sky-400' :
+                          tier.rarity === 'Medium' ? 'bg-indigo-400' : 'bg-zinc-400'
+                        }`} />
+                        {tier.rarity}
+                      </td>
+                      <td className="py-2.5 px-3 text-center text-white font-bold font-mono">{tier.rate}</td>
+                      <td className="py-2.5 px-3 text-right">
+                        <StarRating count={tier.stars} />
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            {/* Visual Probability Bar */}
+            <div className="space-y-1.5 pt-2">
+              <div className="flex h-3 rounded-full overflow-hidden gap-0.5 p-0.5 bg-black/40 border border-white/10">
+                <div className="bg-zinc-500 rounded-l-full" style={{ width: '50%' }} title="Classic 50%" />
+                <div className="bg-indigo-500" style={{ width: '25%' }} title="Medium 25%" />
+                <div className="bg-sky-400" style={{ width: '15%' }} title="Rare 15%" />
+                <div className="bg-amber-400" style={{ width: '8%' }} title="Legendary 8%" />
+                <div className="bg-purple-400 rounded-r-full" style={{ width: '2%' }} title="Mythic 2%" />
+              </div>
+              <div className="flex justify-between text-[11px] font-mono text-zinc-400">
+                <span>50% Classic</span>
+                <span>25% Medium</span>
+                <span>15% Rare</span>
+                <span>8% Leg</span>
+                <span className="text-purple-300 font-bold">2% Myth</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Duplicate Card Refund System */}
+          <div className="glass-card rounded-2xl p-5 border border-white/15 space-y-4 flex flex-col justify-between">
+            <div className="space-y-1">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-mono uppercase tracking-wider text-zinc-300 font-semibold">Duplicate Card Shard Refunds</span>
+                <span className="text-[10px] font-mono text-emerald-400 font-semibold">Instant Compensation</span>
+              </div>
+              <p className="text-xs text-zinc-400">Pulling already owned characters awards guaranteed bonus shards</p>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs font-mono">
+                <thead>
+                  <tr className="border-b border-white/10 bg-white/[0.02]">
+                    <th className="text-left py-2.5 px-3 text-zinc-300 font-semibold">Duplicate Rarity</th>
+                    <th className="text-right py-2.5 px-3 text-zinc-300 font-semibold">Shard Payout</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/10">
+                  {WHEEL_OF_FORTUNE.duplicateRefunds.map(ref => (
+                    <tr key={ref.rarity} className="hover:bg-white/[0.03]">
+                      <td className="py-2.5 px-3 font-semibold text-white">{ref.rarity}</td>
+                      <td className="py-2.5 px-3 text-right text-amber-300 font-bold font-mono">{ref.refund}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <div className="p-3 rounded-xl bg-white/[0.03] border border-white/10 text-xs font-mono text-zinc-300">
+              <div className="font-semibold text-white mb-1">Command Syntax:</div>
+              <code className="text-xs font-mono text-amber-200">/spin 1</code> · <code className="text-xs font-mono text-amber-200">/spin 5</code> · <code className="text-xs font-mono text-amber-200">/spin 10</code>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 04. Character Card Melting Station */}
+      <section className="space-y-4 pt-6 border-t border-white/10">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div>
+            <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+              <span className="text-zinc-400 font-mono text-xs sm:text-sm">04.</span> Character Card Melting Station — <CommandBadge cmd="/melt" />
+            </h2>
+            <p className="text-xs text-zinc-300 font-mono mt-0.5">
+              Recycle duplicate and surplus character cards into valuable Arena Vouchers for the Wheel of Fortune.
+            </p>
+          </div>
+          <span className="px-2.5 py-1 rounded-md bg-white/10 text-white font-mono text-xs font-semibold self-start sm:self-auto border border-white/15">
+            Recycling Crucible
+          </span>
+        </div>
+
+        <Callout variant="tip" title="Batch Melting Rules & Protection Safeguards">
+          Sacrifice duplicates to forge vouchers. All cards submitted within a single <InlineCode>/melt</InlineCode> command must be of the <strong>exact same rarity</strong>. Favorited cards (<InlineCode>/fav</InlineCode>) and actively equipped Talismans are protected from destruction.
+        </Callout>
+
+        {/* Exchange Ratios Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="glass-card rounded-2xl p-5 border border-white/15 space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-mono font-bold text-white">Classic Tier</span>
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-500/20 text-zinc-300 border border-zinc-500/30">1★</span>
+            </div>
+            <div className="text-2xl font-black font-mono text-white">5 : 1</div>
+            <div className="text-xs font-mono text-emerald-300 font-semibold">5 Classic Cards ➔ 1 Voucher</div>
+            <p className="text-[11px] text-zinc-400">Requires multiples of 5 (e.g. 5, 10, 15 cards)</p>
+          </div>
+
+          <div className="glass-card rounded-2xl p-5 border border-white/15 space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-mono font-bold text-sky-300">Rare Tier</span>
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-500/20 text-sky-200 border border-sky-500/30">2★</span>
+            </div>
+            <div className="text-2xl font-black font-mono text-white">3 : 1</div>
+            <div className="text-xs font-mono text-emerald-300 font-semibold">3 Rare Cards ➔ 1 Voucher</div>
+            <p className="text-[11px] text-zinc-400">Requires multiples of 3 (e.g. 3, 6, 9 cards)</p>
+          </div>
+
+          <div className="glass-card rounded-2xl p-5 border border-white/15 space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-mono font-bold text-indigo-300">Medium Tier</span>
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-200 border border-indigo-500/30">3★</span>
+            </div>
+            <div className="text-2xl font-black font-mono text-white">2 : 1</div>
+            <div className="text-xs font-mono text-emerald-300 font-semibold">2 Medium Cards ➔ 1 Voucher</div>
+            <p className="text-[11px] text-zinc-400">Requires multiples of 2 (e.g. 2, 4, 6 cards)</p>
+          </div>
+        </div>
+
+        {/* Protected Tiers & Safety Safeguards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="glass-card rounded-2xl p-5 border border-amber-500/30 bg-amber-500/[0.03] space-y-2.5">
+            <div className="flex items-center gap-2">
+              <ShieldAlert className="w-4 h-4 text-amber-400" />
+              <h3 className="font-bold text-white text-sm">Protected Tiers: Legendary & Mythic</h3>
+            </div>
+            <p className="text-xs text-zinc-200 leading-relaxed">
+              <strong>Legendary (4★)</strong> and <strong>Mythic (5★)</strong> cards possess sovereign status and cannot be melted under any circumstance. This hardcoded safeguard guarantees your rarest combat talismans are never destroyed accidentally.
+            </p>
+          </div>
+
+          <div className="glass-card rounded-2xl p-5 border border-white/15 space-y-2.5">
+            <div className="flex items-center gap-2">
+              <RefreshCw className="w-4 h-4 text-emerald-400" />
+              <h3 className="font-bold text-white text-sm">System Mechanics & Syntax Rules</h3>
+            </div>
+            <ul className="text-xs text-zinc-300 space-y-1.5 list-disc list-inside">
+              <li><strong>Single-Rarity Batch:</strong> All card IDs in one command must share identical rarity.</li>
+              <li><strong>Repeat ID for Multiples:</strong> Repeat the ID to melt multiple copies (e.g. <InlineCode>/melt 01 01 01 01 01</InlineCode>).</li>
+              <li><strong>Favorite Lock:</strong> Cards marked with <InlineCode>/fav &lt;id&gt;</InlineCode> cannot be melted.</li>
+              <li><strong>Confirmation Dialog:</strong> An inline confirmation prompt verifies the sacrifice before deletion.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Talismans & Abilities */}
+      <section className="space-y-4 pt-6 border-t border-white/10">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div>
+            <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+              <span className="text-zinc-400 font-mono text-xs sm:text-sm">05.</span> Talismans & Mythic Abilities
             </h2>
             <p className="text-xs text-zinc-300 font-mono mt-0.5">
               Pouch stat allocations, 1-Mythic limit rules, and unique in-combat passives.

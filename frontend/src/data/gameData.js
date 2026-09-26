@@ -122,6 +122,20 @@ export const BOT_COMMANDS = [
     desc: 'Inspect equipped Talismans, active Mythic passives, and slot limits (Max 1 Mythic).',
     example: '/talismans'
   },
+  {
+    category: 'Character Progression',
+    command: '/setstats',
+    params: '<hp> <str> <dex> <spd> <def>',
+    desc: 'Instantly allocate total stat points up to the 110 max cap (99 Base + 5 Ref + 6 Clan).',
+    example: '/setstats 25 30 20 15 20'
+  },
+  {
+    category: 'Character Progression',
+    command: '/presets',
+    params: '[save/load/view]',
+    desc: 'Manage and quickly switch between customized stat allocation presets. Bonus points permanently preserved.',
+    example: '/presets'
+  },
 
   // Clans & Guilds
   {
@@ -363,6 +377,27 @@ export const BOT_COMMANDS = [
     desc: 'Check your current Shard currency balance.',
     example: '/balance'
   },
+  {
+    category: 'Gacha & Economy',
+    command: '/spin',
+    params: '[amount]',
+    desc: 'Spin the Character Wheel of Fortune (1 to 10 spins) using Arena Vouchers for transparent drops and refund shards.',
+    example: '/spin 5'
+  },
+  {
+    category: 'Gacha & Economy',
+    command: '/melt',
+    params: '<charid_1> <charid_2> ...',
+    desc: 'Recycle duplicate character cards of the same rarity to forge Arena Vouchers (Classic 5:1, Rare 3:1, Medium 2:1).',
+    example: '/melt 01 01 01 01 01'
+  },
+  {
+    category: 'Gacha & Economy',
+    command: '/fav',
+    params: '<card_id>',
+    desc: 'Favorite/lock an anime card to protect it against accidental /melt or transfers.',
+    example: '/fav 189'
+  },
 
   // Minigames & Duels
   {
@@ -497,18 +532,18 @@ export const CLAN_ROLES = [
 export const CLAN_LEVELS = [
   { level: 1, shardsNeeded: 'Base (500 to create)', totalShards: 500, memberCap: 5, perks: 'Clan Creation & Custom Profile Tag [TAG]' },
   { level: 2, shardsNeeded: '1,000 Shards', totalShards: 1000, memberCap: 6, perks: '+5% Hunt XP Boost' },
-  { level: 3, shardsNeeded: '2,500 Shards', totalShards: 2500, memberCap: 8, perks: '+5% Hunt Shards Drop Boost' },
+  { level: 3, shardsNeeded: '2,500 Shards', totalShards: 2500, memberCap: 8, perks: '+1 Bonus RPG Stat Point & +5% Hunt Shards Drop Boost' },
   { level: 4, shardsNeeded: '5,000 Shards', totalShards: 5000, memberCap: 10, perks: '5% RPG Gear Upgrade Discount' },
-  { level: 5, shardsNeeded: '10,000 Shards', totalShards: 10000, memberCap: 12, perks: '+5% PvE Damage Boost' },
+  { level: 5, shardsNeeded: '10,000 Shards', totalShards: 10000, memberCap: 12, perks: '+1 Bonus RPG Stat Point & +5% PvE Damage Boost' },
   { level: 6, shardsNeeded: '18,000 Shards', totalShards: 18000, memberCap: 15, perks: '+10% Hunt XP Boost' },
-  { level: 7, shardsNeeded: '30,000 Shards', totalShards: 30000, memberCap: 18, perks: '+10% Hunt Shards Drop Boost' },
+  { level: 7, shardsNeeded: '30,000 Shards', totalShards: 30000, memberCap: 18, perks: '+1 Bonus RPG Stat Point & +10% Hunt Shards Drop Boost' },
   { level: 8, shardsNeeded: '50,000 Shards', totalShards: 50000, memberCap: 22, perks: '10% RPG Gear Upgrade Discount' },
-  { level: 9, shardsNeeded: '75,000 Shards', totalShards: 75000, memberCap: 26, perks: '+10% PvE Damage Boost' },
-  { level: 10, shardsNeeded: '120,000 Shards', totalShards: 120000, memberCap: 30, perks: '+1 Extra Talisman Slot for active members (+15% XP/Shards/DMG, 15% Upgrade Discount)' },
+  { level: 9, shardsNeeded: '75,000 Shards', totalShards: 75000, memberCap: 26, perks: '+1 Bonus RPG Stat Point & +10% PvE Damage Boost' },
+  { level: 10, shardsNeeded: '120,000 Shards', totalShards: 120000, memberCap: 30, perks: '+2 Bonus RPG Stat Points (Total +6 from Clan Perks) & +1 Extra Talisman Slot for active members (+15% XP/Shards/DMG, 15% Upgrade Discount)' },
 ];
 
 export const CHALLENGER_TIERS = [
-  { tier: 'Common', hp: 800, atk: 35, shards: 35, cardDrop: '75%', color: 'text-zinc-300' },
+  { tier: 'Classic', hp: 800, atk: 35, shards: 35, cardDrop: '75%', color: 'text-zinc-300' },
   { tier: 'Rare', hp: 1400, atk: 60, shards: 65, cardDrop: '50%', color: 'text-sky-300' },
   { tier: 'Medium', hp: 2200, atk: 95, shards: 100, cardDrop: '35%', color: 'text-indigo-300' },
   { tier: 'Legendary', hp: 3500, atk: 140, shards: 200, cardDrop: '20%', color: 'text-amber-300' },
@@ -522,7 +557,7 @@ export const REFERRAL_DATA = {
   },
   baseInviter: {
     title: 'Inviter Bounty',
-    rewards: '+100 Shards + 1 Common Character Card (+50 Shards duplicate compensation)'
+    rewards: '+100 Shards + 1 Classic Character Card (+50 Shards duplicate compensation)'
   },
   milestones: [
     { recruits: 1, reward: 'Random Tier 2 Elite Weapon', dupReward: '+50 Shards duplicate protection' },
@@ -534,7 +569,7 @@ export const REFERRAL_DATA = {
 
 export const SHOP_PRICING = {
   characterCards: [
-    { rarity: 'Common', range: '30–50 ◈', desc: 'Foundational anime cards and collection synthesis' },
+    { rarity: 'Classic', range: '30–50 ◈', desc: 'Foundational anime cards and collection synthesis' },
     { rarity: 'Rare', range: '90–150 ◈', desc: 'Higher stat cards and enhanced collector ratings' },
     { rarity: 'Medium', range: '210–320 ◈', desc: 'Elite anime characters with high market value' },
     { rarity: 'Legendary', range: '580–850 ◈', desc: 'Peak +5 combat attribute talisman cards (STR, DEX, SPD, DEF)' },
@@ -545,6 +580,78 @@ export const SHOP_PRICING = {
     { tier: 'Tier 2 Standard', price: '650–880 ◈', desc: 'Mid-game armaments with elevated damage and block absorption' },
     { tier: 'Tier 2 Status/Elite', price: '1,100–1,450 ◈', desc: 'Elite weapons with innate status effects (Bleed, Scarlet Rot, Frost)' },
   ]
+};
+
+export const CLAN_GLORY_SYSTEM = {
+  overview: 'Glory Points (GP) are earned collaboratively by clan members through World Boss Raids and clan activities.',
+  settlementSchedule: 'Weekly Settlement occurs automatically every Sunday at 00:00 UTC.',
+  deliveryMethod: 'Rewards are distributed directly to eligible members via Telegram DM.',
+  minThreshold: 25,
+  minThresholdDesc: 'Minimum eligibility threshold: 25 GP contributed during the active week to receive settlement rewards.',
+  rankRewards: [
+    { rank: 'Rank 1', vouchers: 10, shards: 500, treasury: 500, minGP: 25, tierDesc: 'Champion Clan Tier' },
+    { rank: 'Rank 2–3', vouchers: 6, shards: 300, treasury: 250, minGP: 25, tierDesc: 'Podium Clan Tier' },
+    { rank: 'Rank 4–10', vouchers: 3, shards: 150, treasury: 100, minGP: 25, tierDesc: 'Top 10 Contenders Tier' },
+    { rank: 'Rank 11+', vouchers: 1, shards: 50, treasury: 0, minGP: 50, tierDesc: 'Active Contenders Tier (Requires min. 50 GP)' },
+  ],
+  mvpAward: {
+    title: 'Clan MVP Award',
+    bonusVouchers: 2,
+    bonusShards: 100,
+    desc: 'The single highest GP contributor in each eligible clan earns an additional +2 Bonus Vouchers and +100 Shards.'
+  }
+};
+
+export const WHEEL_OF_FORTUNE = {
+  command: '/spin [amount]',
+  spinsRange: '1 to 10 spins at a time',
+  currency: 'Arena Vouchers',
+  sources: 'Clan Glory Sunday settlements, Character Card Melting Station (/melt), and special redeem codes',
+  rates: [
+    { rarity: 'Classic', rate: '50.0%', stars: 1, desc: 'Foundational anime cards and collection synthesis' },
+    { rarity: 'Medium', rate: '25.0%', stars: 3, desc: 'Elite anime characters with versatile collection value' },
+    { rarity: 'Rare', rate: '15.0%', stars: 2, desc: 'High-value characters with enhanced attributes' },
+    { rarity: 'Legendary', rate: '8.0%', stars: 4, desc: 'Peak +5 combat attribute talisman cards' },
+    { rarity: 'Mythic', rate: '2.0%', stars: 5, desc: 'Pinnacle +50 Max HP and exclusive in-combat passives' },
+  ],
+  duplicateRefunds: [
+    { rarity: 'Classic', refund: '+5 Shards' },
+    { rarity: 'Medium', refund: '+10 Shards' },
+    { rarity: 'Rare', refund: '+25 Shards' },
+    { rarity: 'Legendary', refund: '+75 Shards' },
+    { rarity: 'Mythic', refund: '+200 Shards' },
+  ]
+};
+
+export const MELTING_STATION = {
+  command: '/melt <charid_1> <charid_2> [charid_3] ...',
+  purpose: 'Sacrifice duplicate character cards to forge Arena Vouchers for the Wheel of Fortune (/spin).',
+  ratios: [
+    { rarity: 'Classic', requirement: '5 cards ➔ 1 Voucher', note: 'Requires multiples of 5' },
+    { rarity: 'Rare', requirement: '3 cards ➔ 1 Voucher', note: 'Requires multiples of 3' },
+    { rarity: 'Medium', requirement: '2 cards ➔ 1 Voucher', note: 'Requires multiples of 2' },
+  ],
+  protectedTiers: [
+    { rarity: 'Legendary', status: 'Protected tier (strictly cannot be melted)' },
+    { rarity: 'Mythic', status: 'Protected tier (strictly cannot be melted)' },
+  ],
+  rules: [
+    'Single-Rarity Batching: All cards in a single /melt command must belong to the exact same rarity.',
+    'Multi-Copy Melting: Multiple copies of the same character can be melted by repeating the ID (e.g. /melt 01 01 01 01 01).',
+    'Favorite & Equipped Protection: Favorited cards (/fav) and actively equipped Talisman cards are locked and cannot be melted.',
+    'Safety Confirmation Prompt: Features an interactive inline confirmation prompt before cards are permanently destroyed.'
+  ]
+};
+
+export const STAT_POINTS_EXPANSION = {
+  maxCap: 110,
+  breakdown: [
+    { source: 'Base Level-ups', points: 99, desc: 'Level 1 to 100 Tarnished (Level - 1 formula)' },
+    { source: 'Referral Milestones', points: 5, desc: 'Unlocked at Milestone 5 in /ref' },
+    { source: 'Clan Level Perks', points: 6, desc: 'Unlocked across Clan Levels 3, 5, 7, 9, 10 in /clan' },
+  ],
+  totalFormula: '99 Base + 5 Referral + 6 Clan Perks = 110 Total Max Stat Points',
+  preservation: 'Bonus stat points (+11 total) are permanently preserved across Rebirth (/rebirth / /respec), custom allocation (/setstats), and Stat Presets (/presets).'
 };
 
 export const ELDEN_RING_DLC_WEAPON_CATEGORIES = [
